@@ -25,8 +25,8 @@ namespace Road.Inspection.Module.BusinessObjects
         private string _name;
         public string name { get { return _name; } set { SetPropertyValue(nameof(name), ref _name, value); } }
 
-        private string _roadCode;
-        public string roadCode { get { return _roadCode; } set { SetPropertyValue(nameof(roadCode), ref _roadCode, value); } }
+        private string _code;
+        public string code { get { return _code; } set { SetPropertyValue(nameof(code), ref _code, value); } }
 
         public override void AfterConstruction()
         {
