@@ -23,11 +23,13 @@ namespace Road.Inspection.Module.BusinessObjects
         }
 
         private string _location;
+        [XafDisplayName("Байршил")]
         public string location { get { return _location; } set { SetPropertyValue(nameof(location), ref _location, value); } }
 
-        private int _length;
+        private string _length;
         [VisibleInListView(false), Size(15)]
-        public int length { get { return _length; } set { SetPropertyValue(nameof(length), ref _length, value); } }
+        [XafDisplayName("Уртраг")]
+        public string length { get { return _length; } set { SetPropertyValue(nameof(length), ref _length, value); } }
 
         private int _latitude;
         [Size(15)]

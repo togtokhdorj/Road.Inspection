@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel>
+    <Class Name="Road.Inspection.Module.BusinessObjects.RoadBridgeInjury" Caption="Авто замын гүүрэнд гарсан эвдрэл, гэмтэл, согог" />
+  </BOModel>
+</Application>

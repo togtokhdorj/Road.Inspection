@@ -70,11 +70,11 @@ namespace Road.Inspection.Module.BusinessObjects
         //public string isDelivery { get { return _isDelivery; } set { SetPropertyValue(nameof(isDelivery), ref _isDelivery, value); } }
 
         private string _kilometr;
-        [VisibleInListView(false), Size(30)]
+        [VisibleInListView(false), Size(20)]
         public string kilometr { get { return _kilometr; } set { SetPropertyValue(nameof(kilometr), ref _kilometr, value); } }
 
         private string _kilometrs;
-        [Size(30)]
+        [Size(20)]
         public string kilometrs { get { return _kilometrs; } set { SetPropertyValue(nameof(kilometrs), ref _kilometrs, value); } }
 
         private string _endCoordinates;

@@ -281,3 +281,6 @@ D:\projects\Road.Inspection\Road.Inspection.Module.Web\obj\Debug\Road.Inspection
 D:\projects\Road.Inspection\Road.Inspection.Module.Web\obj\Debug\Road.Inspection.Module.Web.csproj.CopyComplete
 D:\projects\Road.Inspection\Road.Inspection.Module.Web\obj\Debug\Road.Inspection.Module.Web.dll
 D:\projects\Road.Inspection\Road.Inspection.Module.Web\obj\Debug\Road.Inspection.Module.Web.pdb
+D:\projects\Road.Inspection\Road.Inspection.Module.Web\bin\Debug\mn\Road.Inspection.Module.Web.resources.dll
+D:\projects\Road.Inspection\Road.Inspection.Module.Web\obj\Debug\Road.Inspection.Module.Web.dll.licenses
+D:\projects\Road.Inspection\Road.Inspection.Module.Web\obj\Debug\mn\Road.Inspection.Module.Web.resources.dll

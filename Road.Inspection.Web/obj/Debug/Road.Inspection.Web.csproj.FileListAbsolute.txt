@@ -65,3 +65,4 @@ D:\projects\Road.Inspection\Road.Inspection.Web\obj\Debug\Road.Inspection.Web.cs
 D:\projects\Road.Inspection\Road.Inspection.Web\obj\Debug\Road.Inspection.Web.csproj.CopyComplete
 D:\projects\Road.Inspection\Road.Inspection.Web\obj\Debug\Road.Inspection.Web.dll
 D:\projects\Road.Inspection\Road.Inspection.Web\obj\Debug\Road.Inspection.Web.pdb
+D:\projects\Road.Inspection\Road.Inspection.Web\bin\mn\Road.Inspection.Module.Web.resources.dll

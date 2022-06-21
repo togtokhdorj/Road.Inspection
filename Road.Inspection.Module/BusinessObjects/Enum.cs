@@ -16,11 +16,12 @@ namespace Road.Inspection.Module.BusinessObjects
 {
     public enum WeatherConditions
     {
-        Sunny = 0,
-        Cloudy = 1,
-        Raining = 2,
-        Snowing = 3,
-        RainbowClouds = 4,
-        StrongWinds = 5
+        None = 0,
+        Sunny = 1,
+        Cloudy = 2,
+        Raining = 3,
+        Snowing = 4,
+        RainbowClouds = 5,
+        StrongWinds = 6
     }
 }
