@@ -15,6 +15,7 @@ using System.Text;
 namespace Road.Inspection.Module.BusinessObjects
 {
     [DefaultClassOptions]
+    [XafDisplayName("Авто замын ус зайлуулалт, шуудуу, хоолойнд гарсан эвдрэл, байршил")]
     public class RoadDrainge : RoadItem
     {
         public RoadDrainge(Session session)

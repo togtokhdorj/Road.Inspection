@@ -15,6 +15,7 @@ using System.Text;
 namespace Road.Inspection.Module.BusinessObjects
 {
     [DefaultClassOptions]
+    [XafDisplayName("Авто замын үйлчилгээний байгууламжийн эвдрэлийн байршил")]
     public class RoadServiceFacility : RoadItem
     {
         public RoadServiceFacility(Session session)

@@ -15,6 +15,7 @@ using System.Text;
 namespace Road.Inspection.Module.BusinessObjects
 {
     [DefaultClassOptions]
+    [XafDisplayName("Авто замын тоноглолын эвдрэл, гэмтэл, байршил")]
     public class SmoothnessRoadway : RoadItem
     {
         public SmoothnessRoadway(Session session)

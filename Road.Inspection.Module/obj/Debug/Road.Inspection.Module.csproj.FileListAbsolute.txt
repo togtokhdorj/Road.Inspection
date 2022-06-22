@@ -185,3 +185,5 @@ D:\projects\Road.Inspection\Road.Inspection.Module\obj\Debug\Road.Inspection.Mod
 D:\projects\Road.Inspection\Road.Inspection.Module\obj\Debug\Road.Inspection.Module.dll
 D:\projects\Road.Inspection\Road.Inspection.Module\obj\Debug\Road.Inspection.Module.pdb
 D:\projects\Road.Inspection\Road.Inspection.Module\obj\Debug\Road.Inspection.Module.dll.licenses
+D:\projects\Road.Inspection\Road.Inspection.Module\bin\Debug\mn\Road.Inspection.Module.resources.dll
+D:\projects\Road.Inspection\Road.Inspection.Module\obj\Debug\mn\Road.Inspection.Module.resources.dll

@@ -17,11 +17,17 @@ namespace Road.Inspection.Module.BusinessObjects
     public enum WeatherConditions
     {
         None = 0,
+        [XafDisplayName("Нарлаг")]
         Sunny = 1,
+        [XafDisplayName("Бүрхэг")]
         Cloudy = 2,
+        [XafDisplayName("Бороотой")]
         Raining = 3,
+        [XafDisplayName("Цастай")]
         Snowing = 4,
+        [XafDisplayName("Сол.Үүл")]
         RainbowClouds = 5,
+        [XafDisplayName("Хүчтэй салхитай")]
         StrongWinds = 6
     }
 }

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel>
+    <Class Name="Road.Inspection.Module.BusinessObjects.RoadInspection">
+      <OwnMembers>
+        <Member Name="degrees" Caption="Градус" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Views>
+    <DetailView Id="RoadInspection_DetailView">
+      <Items>
+        <PropertyEditor Id="degrees" Caption="Градус" />
+      </Items>
+    </DetailView>
+    <ListView Id="RoadInspection_ListView">
+      <Columns>
+        <ColumnInfo Id="degrees" Caption="Градус" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

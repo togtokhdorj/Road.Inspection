@@ -15,6 +15,7 @@ using System.Text;
 namespace Road.Inspection.Module.BusinessObjects
 {
     [DefaultClassOptions]
+    [XafDisplayName("Авто замын хийц хэсгийн эвдрэлийн төрлүүд")]
     public class RoadItem : BaseObject
     {
         public RoadItem(Session session)
@@ -23,7 +24,7 @@ namespace Road.Inspection.Module.BusinessObjects
         }
 
         private string _location;
-        [XafDisplayName("Байршил")]
+        [XafDisplayName("Байршил"), Size(20)]
         public string location { get { return _location; } set { SetPropertyValue(nameof(location), ref _location, value); } }
 
         private string _length;
@@ -31,27 +32,34 @@ namespace Road.Inspection.Module.BusinessObjects
         [XafDisplayName("Уртраг")]
         public string length { get { return _length; } set { SetPropertyValue(nameof(length), ref _length, value); } }
 
-        private int _latitude;
-        [Size(15)]
-        public int latitude { get { return _latitude; } set { SetPropertyValue(nameof(latitude), ref _latitude, value); } }
+        private string _latitude;
+        [XafDisplayName("Өргөрөг"), Size(15)]
+        public string latitude { get { return _latitude; } set { SetPropertyValue(nameof(latitude), ref _latitude, value); } }
 
-        private string _roadCode;
-        public string roadCode { get { return _roadCode; } set { SetPropertyValue(nameof(roadCode), ref _roadCode, value); } }
-
+        private string _code;
+        [XafDisplayName("Код"), Size(20)]
+        public string code { get { return _code; } set { SetPropertyValue(nameof(code), ref _code, value); } }
 
         private string _measure;
+        [Size(20)]
         public string measure { get { return _measure; } set { SetPropertyValue(nameof(measure), ref _measure, value); } }
 
         private string _name;
+        [XafDisplayName("Нэр"), Size(30)]
         public string name { get { return _name; } set { SetPropertyValue(nameof(name), ref _name, value); } }
 
-        private FileData _image;
-        [VisibleInListView(false)]
-        public FileData image { get { return _image; } set { SetPropertyValue(nameof(image), ref _image, value); } }
+        private string _image;
+        [VisibleInListView(false), XafDisplayName("Зураг"),]
+        public string image { get { return _image; } set { SetPropertyValue(nameof(image), ref _image, value); } }
+
+        private RoadInspection _roadInspection;
+        [Association]
+        public RoadInspection roadInspection { get { return _roadInspection; } set { SetPropertyValue(nameof(roadInspection), ref _roadInspection, value); } }
 
         public override void AfterConstruction()
         {
             base.AfterConstruction();
         }
+
     }
 }

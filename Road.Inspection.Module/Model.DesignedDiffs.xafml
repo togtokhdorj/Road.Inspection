@@ -1,11 +1,57 @@
-﻿<?xml version="1.0" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Application Title="Road.Inspection">
   <BOModel>
     <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" Caption="Base User" />
   </BOModel>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="RoadBridgeInjury_ListView" Removed="True" />
+          <Item Id="RoadCode_ListView" Removed="True" />
+          <Item Id="RoadDrainge_ListView" Removed="True" />
+          <Item Id="RoadEdgeSideSlope_ListView" Removed="True" />
+          <Item Id="RoadInspection_ListView" Removed="True" />
+          <Item Id="RoadItem_ListView" Removed="True">
+            <Items>
+              <Item Id="RoadBridgeInjury_ListView" ViewId="RoadBridgeInjury_ListView" ObjectKey="" IsNewNode="True" />
+              <Item Id="RoadDrainge_ListView" ViewId="RoadDrainge_ListView" ObjectKey="" IsNewNode="True" />
+              <Item Id="RoadEdgeSideSlope_ListView" ViewId="RoadEdgeSideSlope_ListView" ObjectKey="" IsNewNode="True" />
+              <Item Id="RoadLane_ListView" ViewId="RoadLane_ListView" ObjectKey="" IsNewNode="True" />
+              <Item Id="RoadServiceFacility_ListView" ViewId="RoadServiceFacility_ListView" ObjectKey="" IsNewNode="True" />
+              <Item Id="SmoothnessRoadway_ListView" ViewId="SmoothnessRoadway_ListView" ObjectKey="" IsNewNode="True" />
+            </Items>
+          </Item>
+          <Item Id="RoadLane_ListView" Removed="True" />
+          <Item Id="RoadServiceFacility_ListView" Removed="True" />
+          <Item Id="SmoothnessRoadway_ListView" Removed="True" />
+        </Items>
+      </Item>
+      <Item Id="Авто замын үзлэг" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="RoadCode_ListView" ViewId="RoadCode_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="RoadInspection_ListView" ViewId="RoadInspection_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="RoadItem_ListView" ObjectKey="" ViewId="RoadItem_ListView" IsNewNode="True">
+            <Items IsNewNode="True">
+              <Item Id="RoadBridgeInjury_ListView" ViewId="RoadBridgeInjury_ListView" ObjectKey="" IsNewNode="True" />
+              <Item Id="RoadDrainge_ListView" ViewId="RoadDrainge_ListView" ObjectKey="" IsNewNode="True" />
+              <Item Id="RoadEdgeSideSlope_ListView" ViewId="RoadEdgeSideSlope_ListView" ObjectKey="" IsNewNode="True" />
+              <Item Id="RoadLane_ListView" ViewId="RoadLane_ListView" ObjectKey="" IsNewNode="True" />
+              <Item Id="RoadServiceFacility_ListView" ViewId="RoadServiceFacility_ListView" ObjectKey="" IsNewNode="True" />
+              <Item Id="SmoothnessRoadway_ListView" ViewId="SmoothnessRoadway_ListView" ObjectKey="" IsNewNode="True" />
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
   <Options>
     <LayoutManagerOptions RequiredFieldMark="*" />
   </Options>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="21.1.4.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="21.1.4.0" IsNewNode="True" />
+  </SchemaModules>
   <Views>
     <ListView Id="ApplicationUser_ListView" Caption="Users" />
   </Views>
