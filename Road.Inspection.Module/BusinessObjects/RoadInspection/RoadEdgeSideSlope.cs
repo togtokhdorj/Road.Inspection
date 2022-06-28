@@ -15,7 +15,7 @@ using System.Text;
 namespace Road.Inspection.Module.BusinessObjects
 {
     [DefaultClassOptions]
-    [XafDisplayName("Авто замын, хөвөө, Хажуу налуу, зогсоолын талбайн эвдэрлүүд, байршил")]
+    [XafDisplayName("Авто замын,хөвөө, Хажуу налуу, зогсоолын талбайн эвдэрлүүд, байршил")]
     public class RoadEdgeSideSlope : RoadItem
     {
         public RoadEdgeSideSlope(Session session)

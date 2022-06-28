@@ -33,6 +33,8 @@ namespace Road.Inspection.Module.BusinessObjects
 
     public enum Evaluation
     {
+        [XafDisplayName("Сонгох")]
+        O = 0,
         [XafDisplayName("2")]
         O2 = 2,
         [XafDisplayName("3")]

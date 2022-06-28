@@ -28,8 +28,7 @@ namespace Road.Inspection.Module.BusinessObjects
         public string location { get { return _location; } set { SetPropertyValue(nameof(location), ref _location, value); } }
 
         private string _length;
-        [VisibleInListView(false), Size(15)]
-        [XafDisplayName("Уртраг")]
+        [XafDisplayName("Уртраг"), Size(15)]
         public string length { get { return _length; } set { SetPropertyValue(nameof(length), ref _length, value); } }
 
         private string _latitude;
@@ -41,15 +40,12 @@ namespace Road.Inspection.Module.BusinessObjects
         public string code { get { return _code; } set { SetPropertyValue(nameof(code), ref _code, value); } }
 
         private string _measure;
+        [XafDisplayName("Хэмжих нэгж")]
         [Size(20)]
         public string measure { get { return _measure; } set { SetPropertyValue(nameof(measure), ref _measure, value); } }
 
-        private string _name;
-        [XafDisplayName("Нэр"), Size(30)]
-        public string name { get { return _name; } set { SetPropertyValue(nameof(name), ref _name, value); } }
-
         private string _image;
-        [VisibleInListView(false), XafDisplayName("Зураг"),]
+        [XafDisplayName("Зураг"),]
         public string image { get { return _image; } set { SetPropertyValue(nameof(image), ref _image, value); } }
 
         private RoadInspection _roadInspection;

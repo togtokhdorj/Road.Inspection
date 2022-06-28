@@ -144,7 +144,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessObjects\Enum.cs" />
-    <Compile Include="BusinessObjects\LevelReadiness\EvaluationType.cs" />
     <Compile Include="BusinessObjects\LevelReadiness\LevelReadiness.cs" />
     <Compile Include="BusinessObjects\RoadInspection\RoadBridgeInjury.cs" />
     <Compile Include="BusinessObjects\RoadInspection\RoadCode.cs" />

@@ -15,7 +15,7 @@ using System.Text;
 namespace Road.Inspection.Module.BusinessObjects
 {
     [DefaultClassOptions]
-    [XafDisplayName("Замын зарчих хэсэг, хучлагын байдал")]
+    [XafDisplayName("Замын зорчих хэсэг, хучлагын байдал")]
     public class RoadLane : RoadItem
     { 
         public RoadLane(Session session)
