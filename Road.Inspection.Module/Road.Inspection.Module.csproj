@@ -144,15 +144,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessObjects\Enum.cs" />
-    <Compile Include="BusinessObjects\RoadBridgeInjury.cs" />
-    <Compile Include="BusinessObjects\RoadCode.cs" />
-    <Compile Include="BusinessObjects\RoadDrainge.cs" />
-    <Compile Include="BusinessObjects\RoadEdgeSideSlope.cs" />
-    <Compile Include="BusinessObjects\RoadInspection.cs" />
-    <Compile Include="BusinessObjects\RoadItem.cs" />
-    <Compile Include="BusinessObjects\RoadLane.cs" />
-    <Compile Include="BusinessObjects\DamageRoadEquipment.cs" />
-    <Compile Include="BusinessObjects\RoadServiceFacility.cs" />
+    <Compile Include="BusinessObjects\LevelReadiness\EvaluationType.cs" />
+    <Compile Include="BusinessObjects\LevelReadiness\LevelReadiness.cs" />
+    <Compile Include="BusinessObjects\RoadInspection\RoadBridgeInjury.cs" />
+    <Compile Include="BusinessObjects\RoadInspection\RoadCode.cs" />
+    <Compile Include="BusinessObjects\RoadInspection\RoadDrainge.cs" />
+    <Compile Include="BusinessObjects\RoadInspection\RoadEdgeSideSlope.cs" />
+    <Compile Include="BusinessObjects\RoadInspection\RoadInspection.cs" />
+    <Compile Include="BusinessObjects\RoadInspection\RoadItem.cs" />
+    <Compile Include="BusinessObjects\RoadInspection\RoadLane.cs" />
+    <Compile Include="BusinessObjects\RoadInspection\DamageRoadEquipment.cs" />
+    <Compile Include="BusinessObjects\RoadInspection\RoadServiceFacility.cs" />
     <Compile Include="DatabaseUpdate\Updater.cs" />
     <Compile Include="BusinessObjects\ApplicationUser.cs" />
     <Compile Include="BusinessObjects\ApplicationUserLoginInfo.cs" />

@@ -7,6 +7,8 @@
     <Items>
       <Item Id="Default">
         <Items>
+          <Item Id="EvaluationType_ListView" Removed="True" />
+          <Item Id="LevelReadiness_ListView" Removed="True" />
           <Item Id="RoadBridgeInjury_ListView" Removed="True" />
           <Item Id="RoadCode_ListView" Removed="True" />
           <Item Id="RoadDrainge_ListView" Removed="True" />
@@ -41,6 +43,12 @@
               <Item Id="SmoothnessRoadway_ListView" ViewId="SmoothnessRoadway_ListView" ObjectKey="" IsNewNode="True" />
             </Items>
           </Item>
+        </Items>
+      </Item>
+      <Item Id="Бэлэн байдлын түвшин" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="EvaluationType_ListView" ViewId="EvaluationType_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="LevelReadiness_ListView" ViewId="LevelReadiness_ListView" ObjectKey="" IsNewNode="True" />
         </Items>
       </Item>
     </Items>

@@ -30,4 +30,17 @@ namespace Road.Inspection.Module.BusinessObjects
         [XafDisplayName("Хүчтэй салхитай")]
         StrongWinds = 6
     }
+
+    public enum Evaluation
+    {
+        [XafDisplayName("2")]
+        O2 = 2,
+        [XafDisplayName("3")]
+        O3 = 3,
+        [XafDisplayName("4")]
+        O4 = 4,
+        [XafDisplayName("5")]
+        O5 = 5
+
+    }
 }
