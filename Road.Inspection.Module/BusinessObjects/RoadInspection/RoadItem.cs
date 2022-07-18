@@ -48,9 +48,9 @@ namespace Road.Inspection.Module.BusinessObjects
         [XafDisplayName("Зураг"),]
         public string image { get { return _image; } set { SetPropertyValue(nameof(image), ref _image, value); } }
 
-        private RoadInspection _roadInspection;
+        private RoadInspection _roadInspectionId;
         [Association]
-        public RoadInspection roadInspection { get { return _roadInspection; } set { SetPropertyValue(nameof(roadInspection), ref _roadInspection, value); } }
+        public RoadInspection roadInspectionId { get { return _roadInspectionId; } set { SetPropertyValue(nameof(roadInspectionId), ref _roadInspectionId, value); } }
 
         public override void AfterConstruction()
         {

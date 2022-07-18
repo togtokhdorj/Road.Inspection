@@ -23,6 +23,10 @@ namespace Road.Inspection.Module.BusinessObjects
             : base(session)
         {
         }
+        private RoadInspection _inspectionId;
+        [Association]
+        public RoadInspection inspectionId { get { return _inspectionId; } set { SetPropertyValue(nameof(inspectionId), ref _inspectionId, value); } }
+
         public override void AfterConstruction()
         {
             base.AfterConstruction();

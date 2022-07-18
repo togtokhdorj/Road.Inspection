@@ -128,9 +128,13 @@ namespace Road.Inspection.Module.BusinessObjects
         [XafDisplayName("Зам хариуцагчийн албан тушаал"), Size(8)]
         public string roadPositions { get { return _roadPositions; } set { SetPropertyValue(nameof(roadPositions), ref _roadPositions, value); } }
 
+        //[DevExpress.Xpo.Aggregated, Association]
+        //[XafDisplayName("Замын эвдрэл гэмтэл")]
+        //public XPCollection<RoadItem> roadItems { get { return GetCollection<RoadItem>(nameof(roadItems)); } }
+
         [DevExpress.Xpo.Aggregated, Association]
-        [XafDisplayName("Замын эвдрэл гэмтэл")]
-        public XPCollection<RoadItem> roadItems { get { return GetCollection<RoadItem>(nameof(roadItems)); } }
+        [XafDisplayName("Авто замын гүүрэнд гарсан эвдрэл, гэмтэл, согог")]
+        public XPCollection<RoadBridgeInjury> injurys { get { return GetCollection<RoadBridgeInjury>(nameof(injurys)); } }
 
     }
 }
