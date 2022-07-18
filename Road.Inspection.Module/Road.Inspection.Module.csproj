@@ -152,7 +152,7 @@
     <Compile Include="BusinessObjects\RoadInspection\RoadInspection.cs" />
     <Compile Include="BusinessObjects\RoadInspection\RoadItem.cs" />
     <Compile Include="BusinessObjects\RoadInspection\RoadLane.cs" />
-    <Compile Include="BusinessObjects\RoadInspection\DamageRoadEquipment.cs" />
+    <Compile Include="BusinessObjects\RoadInspection\SmoothnessRoadway.cs" />
     <Compile Include="BusinessObjects\RoadInspection\RoadServiceFacility.cs" />
     <Compile Include="DatabaseUpdate\Updater.cs" />
     <Compile Include="BusinessObjects\ApplicationUser.cs" />

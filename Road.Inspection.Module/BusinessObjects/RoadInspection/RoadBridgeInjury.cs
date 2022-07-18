@@ -15,7 +15,7 @@ using System.Text;
 namespace Road.Inspection.Module.BusinessObjects
 {
     [DefaultClassOptions]
-    [XafDisplayName("Авто замын гүүрэнд гарсан эвдрэл, гэмтэл, согог")]
+    [XafDisplayName("Гүүрэнд гарсан эвдрэл, гэмтэл, согог")]
     
     public class RoadBridgeInjury : RoadItem
     {

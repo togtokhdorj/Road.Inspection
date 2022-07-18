@@ -15,13 +15,18 @@ using System.Text;
 namespace Road.Inspection.Module.BusinessObjects
 {
     [DefaultClassOptions]
-    [XafDisplayName("Авто замын үйлчилгээний байгууламжийн эвдрэлийн байршил")]
+    [XafDisplayName("Үйлчилгээний байгууламжийн эвдрэл")]
     public class RoadServiceFacility : RoadItem
     {
         public RoadServiceFacility(Session session)
             : base(session)
         {
         }
+
+        private RoadInspection _inspectionId;
+        [Association]
+        public RoadInspection inspectionId { get { return _inspectionId; } set { SetPropertyValue(nameof(inspectionId), ref _inspectionId, value); } }
+
         public override void AfterConstruction()
         {
             base.AfterConstruction();

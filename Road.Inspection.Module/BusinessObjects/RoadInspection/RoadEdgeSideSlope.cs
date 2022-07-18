@@ -15,13 +15,18 @@ using System.Text;
 namespace Road.Inspection.Module.BusinessObjects
 {
     [DefaultClassOptions]
-    [XafDisplayName("Авто замын,хөвөө, Хажуу налуу, зогсоолын талбайн эвдэрлүүд, байршил")]
+    [XafDisplayName("Хөвөө, Хажуу налуу, зогсоолын талбайн эвдрэл")]
     public class RoadEdgeSideSlope : RoadItem
     {
         public RoadEdgeSideSlope(Session session)
             : base(session)
         {
         }
+
+        private RoadInspection _inspectionId;
+        [Association]
+        public RoadInspection inspectionId { get { return _inspectionId; } set { SetPropertyValue(nameof(inspectionId), ref _inspectionId, value); } }
+
         public override void AfterConstruction()
         {
             base.AfterConstruction();

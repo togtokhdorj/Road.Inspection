@@ -133,8 +133,29 @@ namespace Road.Inspection.Module.BusinessObjects
         //public XPCollection<RoadItem> roadItems { get { return GetCollection<RoadItem>(nameof(roadItems)); } }
 
         [DevExpress.Xpo.Aggregated, Association]
-        [XafDisplayName("Авто замын гүүрэнд гарсан эвдрэл, гэмтэл, согог")]
+        [XafDisplayName("Гүүрэнд гарсан эвдрэл, гэмтэл, согог")]
         public XPCollection<RoadBridgeInjury> injurys { get { return GetCollection<RoadBridgeInjury>(nameof(injurys)); } }
+
+        [DevExpress.Xpo.Aggregated, Association]
+        [XafDisplayName("Ус зайлуулалт, шуудуу, хоолойнд гарсан эвдрэл")]
+        public XPCollection<RoadDrainge> drainges { get { return GetCollection<RoadDrainge>(nameof(drainges)); } }
+
+        [DevExpress.Xpo.Aggregated, Association]
+        [XafDisplayName("Зорчих хэсэг, хучлагын байдал")]
+        public XPCollection<RoadLane> lanes { get { return GetCollection<RoadLane>(nameof(lanes)); } }
+
+        [DevExpress.Xpo.Aggregated, Association]
+        [XafDisplayName("Тоноглолын эвдрэл, гэмтэл")]
+        public XPCollection<SmoothnessRoadway> smoothnessRoadways { get { return GetCollection<SmoothnessRoadway>(nameof(smoothnessRoadways)); } }
+
+        [DevExpress.Xpo.Aggregated, Association]
+        [XafDisplayName("Хөвөө, Хажуу налуу, зогсоолын талбайн эвдэрлүүд")]
+        public XPCollection<RoadEdgeSideSlope> roadEdgeSideSlopes { get { return GetCollection<RoadEdgeSideSlope>(nameof(roadEdgeSideSlopes)); } }
+
+        [DevExpress.Xpo.Aggregated, Association]
+        [XafDisplayName("Үйлчилгээний байгууламжийн эвдрэл")]
+        public XPCollection<RoadServiceFacility> roadServiceFacilities { get { return GetCollection<RoadServiceFacility>(nameof(roadServiceFacilities)); } }
+
 
     }
 }
