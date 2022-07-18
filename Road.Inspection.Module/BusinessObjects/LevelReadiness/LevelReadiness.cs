@@ -35,9 +35,9 @@ namespace Road.Inspection.Module.BusinessObjects.LevelReadiness
         [XafDisplayName("Км хүртэл"), Size(5)]
         public int kilometrs { get { return _kilometrs; } set { SetPropertyValue(nameof(kilometrs), ref _kilometrs, value); } }
 
-        private int _everyoneKilometrs;
-        [XafDisplayName("Бүгд Км"), Size(5)]
-        public int everyoneKilometrs { get { return _everyoneKilometrs; } set { SetPropertyValue(nameof(everyoneKilometrs), ref _everyoneKilometrs, value); } }
+        private int _totalKilometrs;
+        [XafDisplayName("Бүх Км"), Size(5)]
+        public int totalKilometrs { get { return _totalKilometrs; } set { SetPropertyValue(nameof(totalKilometrs), ref _totalKilometrs, value); } }
 
         private string _startCoordinateLength;
         [XafDisplayName("Эхлэл цэгийн солбилцолын уртраг"), Size(15)]
@@ -63,9 +63,9 @@ namespace Road.Inspection.Module.BusinessObjects.LevelReadiness
         [XafDisplayName("Гишүүдийн нэр"), Size(40)]
         public string memberName { get { return _memberName; } set { SetPropertyValue(nameof(memberName), ref _memberName, value); } }
 
-        private string _roadManagerCampanyName;
+        private string _roadManagerCompanyName;
         [XafDisplayName("Зам хариуцагч байгууллагын нэр"), Size(20)]
-        public string roadManagerCampanyName { get { return _roadManagerCampanyName; } set { SetPropertyValue(nameof(roadManagerCampanyName), ref _roadManagerCampanyName, value); } }
+        public string roadManagerCompanyName { get { return _roadManagerCompanyName; } set { SetPropertyValue(nameof(roadManagerCompanyName), ref _roadManagerCompanyName, value); } }
 
         private string _position;
         [XafDisplayName("Албан тушаал"), Size(20)]
@@ -76,23 +76,23 @@ namespace Road.Inspection.Module.BusinessObjects.LevelReadiness
         public string name { get { return _name; } set { SetPropertyValue(nameof(name), ref _name, value); } }
 
         private int _pavementEdgeEvaluation;
-        [XafDisplayName("Хучилт, хөвөөны үнэлгээ"), Size(1)]
+        [XafDisplayName("Хучилт, хөвөөны үнэлгээ")]
         public int pavementEdgeEvaluation { get { return _pavementEdgeEvaluation; } set { SetPropertyValue(nameof(pavementEdgeEvaluation), ref _pavementEdgeEvaluation, value); } }
 
         private int _dartDam;
-        [XafDisplayName("Шороон далан, шуудууны үнэлгээ"), Size(1)]
+        [XafDisplayName("Шороон далан, шуудууны үнэлгээ")]
         public int dartDam { get { return _dartDam; } set { SetPropertyValue(nameof(dartDam), ref _dartDam, value); } }
 
         private int _bridgeThroat;
-        [XafDisplayName("Гүүр, хоолойны үнэлгээ"), Size(1)]
+        [XafDisplayName("Гүүр, хоолойны үнэлгээ")]
         public int bridgeThroat { get { return _bridgeThroat; } set { SetPropertyValue(nameof(bridgeThroat), ref _bridgeThroat, value); } }
 
         private int _markRoadEquipment;
-        [XafDisplayName("Тэмдэгжилт замын тоноглолын үнэлгээ"), Size(1)]
+        [XafDisplayName("Тэмдэгжилт замын тоноглолын үнэлгээ")]
         public int markRoadEquipment { get { return _markRoadEquipment; } set { SetPropertyValue(nameof(markRoadEquipment), ref _markRoadEquipment, value); } }
 
         private int _roadConstruction;
-        [XafDisplayName("Замын байгууламж, тохижилтын үнэлгээ"), Size(1)]
+        [XafDisplayName("Замын байгууламж, тохижилтын үнэлгээ")]
         public int roadConstruction { get { return _roadConstruction; } set { SetPropertyValue(nameof(roadConstruction), ref _roadConstruction, value); } }
 
         public override void AfterConstruction()
@@ -100,6 +100,5 @@ namespace Road.Inspection.Module.BusinessObjects.LevelReadiness
             base.AfterConstruction();
             date = DateTime.Now;
         }
-
     }
 }
