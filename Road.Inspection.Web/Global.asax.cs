@@ -44,7 +44,7 @@ namespace Road.Inspection.Web {
                 WebApplication.Instance.DatabaseUpdateMode = DatabaseUpdateMode.UpdateDatabaseAlways;
             }
 #endif
-            WebApplication.Instance.Setup();
+             WebApplication.Instance.Setup();
             WebApplication.Instance.Start();
         }
         protected void Application_BeginRequest(Object sender, EventArgs e) {

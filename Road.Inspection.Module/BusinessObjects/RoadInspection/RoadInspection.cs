@@ -20,6 +20,10 @@ namespace Road.Inspection.Module.BusinessObjects
     {
         public RoadInspection(Session session) : base(session) { }
 
+        private string _date;
+        [XafDisplayName("Огноо")]
+        public string date { get { return _date; } set { SetPropertyValue(nameof(date), ref _date, value); } }
+
         private string _teamLeader;
         [XafDisplayName("Багийн ахлагч")]
         public string teamLeader { get { return _teamLeader; } set { SetPropertyValue(nameof(teamLeader), ref _teamLeader, value); } }

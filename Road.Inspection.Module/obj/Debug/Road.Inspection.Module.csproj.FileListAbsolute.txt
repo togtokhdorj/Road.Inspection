@@ -369,10 +369,10 @@ D:\Project\Road.Inspection\Road.Inspection.Module\bin\Debug\de\DevExpress.XtraGa
 D:\Project\Road.Inspection\Road.Inspection.Module\bin\Debug\es\DevExpress.XtraGauges.v21.1.Core.resources.dll
 D:\Project\Road.Inspection\Road.Inspection.Module\bin\Debug\ja\DevExpress.XtraGauges.v21.1.Core.resources.dll
 D:\Project\Road.Inspection\Road.Inspection.Module\bin\Debug\ru\DevExpress.XtraGauges.v21.1.Core.resources.dll
-D:\Project\Road.Inspection\Road.Inspection.Module\obj\Debug\Road.Inspection.Module.csproj.AssemblyReference.cache
 D:\Project\Road.Inspection\Road.Inspection.Module\obj\Debug\Road.Inspection.Module.dll.licenses
 D:\Project\Road.Inspection\Road.Inspection.Module\obj\Debug\Road.Inspection.Module.csproj.CoreCompileInputs.cache
 D:\Project\Road.Inspection\Road.Inspection.Module\obj\Debug\mn\Road.Inspection.Module.resources.dll
 D:\Project\Road.Inspection\Road.Inspection.Module\obj\Debug\Road.Inspection.Module.csproj.CopyComplete
 D:\Project\Road.Inspection\Road.Inspection.Module\obj\Debug\Road.Inspection.Module.dll
 D:\Project\Road.Inspection\Road.Inspection.Module\obj\Debug\Road.Inspection.Module.pdb
+D:\Project\Road.Inspection\Road.Inspection.Module\obj\Debug\Road.Inspection.Module.csproj.AssemblyReference.cache
