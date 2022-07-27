@@ -116,6 +116,12 @@ namespace Road.Inspection.Api.Models
 
 			};
 		}
+		public static SqlParameter[] noneParams()
+        {
+			return new SqlParameter[]
+			{
+			};
+		}
 	}
 	public class RoadItemDto
     {

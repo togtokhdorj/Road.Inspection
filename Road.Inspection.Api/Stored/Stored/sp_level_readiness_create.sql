@@ -1,9 +1,10 @@
 use [Road.Inspection]
 go
-drop proc dbo.sp_create_level_readiness
+drop proc dbo.sp_level_readiness_create
 go
-create proc dbo.sp_create_level_readiness
+create proc dbo.sp_level_readiness_create
 	@kilometr						int=0,
+	@kilometrs						int=0,
 	@totalKilometrs					int=0,
 	@startCoordinateLength			nvarchar(100)=null,
 	@startCoordinateLatitude		nvarchar(100)=null,
@@ -17,13 +18,14 @@ create proc dbo.sp_create_level_readiness
 	@dartDam						int=0,
 	@bridgeThroat					int=0,
 	@markRoadEquipment				int=0,
-	@roadConstruction				int=0
+	@roadConstruction				int=0,
+	@date							Datetime=null
 as
 declare @error  nvarchar(max)=null
 begin try
-	insert into LevelReadiness (Oid,kilometr,totalKilometrs,startCoordinateLength,startCoordinateLatitude,endCoordinateLength,endCoordinateLatitude,
-								workChairmanName,roadManagerCompanyName,position,name,pavementEdgeEvaluation,dartDam,bridgeThroat,markRoadEquipment,roadConstruction)
-		select NEWID(),@kilometr,@totalKilometrs,@startCoordinateLength,@startCoordinateLatitude,@endCoordinateLength,@endCoordinateLatitude,@workChairmanName,@roadManagerCompanyName,@position,@name,@pavementEdgeEvaluation,@dartDam,@bridgeThroat,@markRoadEquipment,@roadConstruction
+	insert into LevelReadiness (Oid,kilometr,kilometrs,totalKilometrs,startCoordinateLength,startCoordinateLatitude,endCoordinateLength,endCoordinateLatitude,
+								workChairmanName,roadManagerCompanyName,position,name,pavementEdgeEvaluation,dartDam,bridgeThroat,markRoadEquipment,roadConstruction,date)
+		select NEWID(),@kilometr,@kilometrs,@totalKilometrs,@startCoordinateLength,@startCoordinateLatitude,@endCoordinateLength,@endCoordinateLatitude,@workChairmanName,@roadManagerCompanyName,@position,@name,@pavementEdgeEvaluation,@dartDam,@bridgeThroat,@markRoadEquipment,@roadConstruction, @date
 end try
 
 begin catch

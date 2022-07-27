@@ -70,6 +70,10 @@ namespace Road.Inspection.Api.Service
                 return ResultDto.error(msg: ex.Message);
             }
         }
+        public List<RoadDto> GetRoads()
+        {
+            return repo.GetRoads();
+        }
     }
 }
 

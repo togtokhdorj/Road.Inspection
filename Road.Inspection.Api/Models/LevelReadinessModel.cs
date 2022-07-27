@@ -34,6 +34,7 @@ namespace Road.Inspection.Api.Models
 		public int markRoadEquipment;
 		public int roadConstruction;
 		public int kilometr;
+		public int kilometrs;
 		public int totalKilometrs;
 		public DateTime date;
 		public static SqlParameter[] insertSqlParams(LevelReadinessDto level)

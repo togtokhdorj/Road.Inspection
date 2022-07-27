@@ -21,6 +21,8 @@ namespace Road.Inspection.Api.Repo
                 dto.totalKilometrs = int.Parse(string.Concat(reader["totalKilometrs"]));
             if (reader["kilometr"] != DBNull.Value)
                 dto.kilometr = int.Parse(string.Concat(reader["kilometr"]));
+            if (reader["kilometrs"] != DBNull.Value)
+                dto.kilometrs = int.Parse(string.Concat(reader["kilometrs"]));
             if (reader["startCoordinateLength"] != DBNull.Value)
                 dto.startCoordinateLength = string.Concat(reader["startCoordinateLength"]);
             if (reader["startCoordinateLatitude"] != DBNull.Value)
@@ -59,6 +61,18 @@ namespace Road.Inspection.Api.Repo
             return null;
         }
         public override LevelReadinessDto PopulateFourthRecord(IDataReader reader)
+        {
+            return null;
+        }
+        public override LevelReadinessDto PopulateFifthRecord(IDataReader reader)
+        {
+            return null;
+        }
+        public override LevelReadinessDto PopulateSixthRecord(IDataReader reader)
+        {
+            return null;
+        }
+        public override LevelReadinessDto PopulateSeventhRecord(IDataReader reader)
         {
             return null;
         }

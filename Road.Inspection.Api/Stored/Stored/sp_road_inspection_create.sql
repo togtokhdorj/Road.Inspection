@@ -6,7 +6,7 @@ create proc dbo.sp_road_inspection_create
 	@id						uniqueidentifier=null,
 	@teamLeader				nvarchar(100)=null,
 	@inspectionEngineer		nvarchar(100)=null,
-	@measuringInstrument		nvarchar(100)=null,
+	@measuringInstrument	nvarchar(100)=null,
 	@other					nvarchar(100)=null,
 	@markType				nvarchar(100)=null,
 	@plateNumber			nvarchar(100)=null,

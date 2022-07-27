@@ -40,5 +40,21 @@ namespace Road.Inspection.Api.Controllers
                 return Request.CreateResponse(HttpStatusCode.OK, ResultDto.error(false, ex.Message));
             }
         }
+        [HttpGet]
+        [Route("road/inspection/get")]
+        [ResponseType(typeof(ResultDto))]
+        public HttpResponseMessage GetRoads()
+        {
+            try
+            {
+                ResultDto resultDto = new ResultDto();
+                resultDto.data = service.GetRoads();
+                return Request.CreateResponse(HttpStatusCode.OK, resultDto);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, ResultDto.error(false, ex.Message));
+            }
+        }
     }
 }

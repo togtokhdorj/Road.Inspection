@@ -15,6 +15,9 @@ namespace Road.Inspection.Api.Repo
         public abstract T PopulateSecondRecord(IDataReader reader);
         public abstract T PopulateThirdRecord(IDataReader reader);
         public abstract T PopulateFourthRecord(IDataReader reader);
+        public abstract T PopulateFifthRecord(IDataReader reader);
+        public abstract T PopulateSixthRecord(IDataReader reader);
+        public abstract T PopulateSeventhRecord(IDataReader reader);
 
         public BaseRepo()
         {
@@ -65,6 +68,27 @@ namespace Road.Inspection.Api.Repo
                     while (reader.Read())
                     {
                         entityList.Add(PopulateFourthRecord(reader));
+                    }
+                }
+                if (reader.NextResult())
+                {
+                    while (reader.Read())
+                    {
+                        entityList.Add(PopulateFifthRecord(reader));
+                    }
+                }
+                if (reader.NextResult())
+                {
+                    while (reader.Read())
+                    {
+                        entityList.Add(PopulateSixthRecord(reader));
+                    }
+                }
+                if (reader.NextResult())
+                {
+                    while (reader.Read())
+                    {
+                        entityList.Add(PopulateSeventhRecord(reader));
                     }
                 }
             }
