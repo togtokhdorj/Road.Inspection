@@ -20,10 +20,7 @@ namespace Road.Inspection.Api.Models
 			category = "";
 			startPoint = "";
 			endPoint = "";
-			kilometr = "";
-			kilometrs = "";
 			endCoordinates = "";
-			degrees = "";
 			beforeLeftLane = "";
 			beforeRightLane = "";
 			currentLeftLane = "";
@@ -55,10 +52,10 @@ namespace Road.Inspection.Api.Models
 		public string category;
 		public string startPoint;
 		public string endPoint;
-		public string kilometr;
-		public string kilometrs;
+		public int kilometr;
+		public int kilometrs;
 		public string endCoordinates;
-		public string degrees;
+		public int degrees;
 		public string beforeLeftLane;
 		public string beforeRightLane;
 		public string currentLeftLane;
@@ -70,7 +67,7 @@ namespace Road.Inspection.Api.Models
 		public string consultantPositions;
 		public string roadManager;
 		public string roadPositions;
-		public int weather;
+		public string weather;
 		public string date;
 		public List<RoadItemDto> roadBridgeInjury;
 		public List<RoadItemDto> roadDrainge;
@@ -113,7 +110,6 @@ namespace Road.Inspection.Api.Models
 				new SqlParameter("roadPositions", level.roadPositions),
 				new SqlParameter("weather", level.weather),
 				new SqlParameter("date", level.date),
-
 			};
 		}
 		public static SqlParameter[] noneParams()
