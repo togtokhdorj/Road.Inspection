@@ -7,9 +7,7 @@
     <Items>
       <Item Id="Default">
         <Items>
-          <Item Id="EvaluationType_ListView" Removed="True" />
           <Item Id="LevelReadiness_ListView" Removed="True" />
-          <Item Id="PavementEdge_ListView" Removed="True" />
           <Item Id="RoadBridgeInjury_ListView" Removed="True" />
           <Item Id="RoadCode_ListView" Removed="True" />
           <Item Id="RoadDrainge_ListView" Removed="True" />
@@ -30,6 +28,8 @@
           <Item Id="SmoothnessRoadway_ListView" Removed="True" />
         </Items>
       </Item>
+      <Item Id="KPI" Removed="True" />
+      <Item Id="Reports" Removed="True" />
       <Item Id="Авто замын үзлэг" IsNewNode="True">
         <Items IsNewNode="True">
           <Item Id="RoadCode_ListView" ViewId="RoadCode_ListView" ObjectKey="" IsNewNode="True" />
