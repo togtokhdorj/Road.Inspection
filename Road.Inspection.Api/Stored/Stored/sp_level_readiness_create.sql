@@ -32,3 +32,4 @@ begin catch
 	set @error=ERROR_MESSAGE();
 	raiserror(@error,16,1);
 end catch
+go
