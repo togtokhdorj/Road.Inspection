@@ -30,7 +30,7 @@ namespace Road.Inspection.Web {
             SecurityStrategy security = WebApplication.Instance.GetSecurityStrategy();
             security.RegisterXPOAdapterProviders();
             DevExpress.ExpressApp.Web.Templates.DefaultVerticalTemplateContentNew.ClearSizeLimit();
-            WebApplication.Instance.SwitchToNewStyle();
+            WebApplication.Instance.SwitchToOldStyle();
             if(ConfigurationManager.ConnectionStrings["ConnectionString"] != null) {
                 WebApplication.Instance.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
             }

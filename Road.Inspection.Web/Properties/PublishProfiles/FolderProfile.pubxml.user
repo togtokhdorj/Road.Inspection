@@ -1,0 +1,729 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\projects\Road.Inspection\Road.Inspection.Web\bin\app.publish\</_PublishTargetUrl>
+    <History>True|2022-08-01T04:58:45.7061289Z;True|2022-08-01T12:55:35.4138887+08:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/de/DevExpress.Data.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:53</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.DataAccess.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:53</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.ExpressApp.AuditTrail.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:55</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.ExpressApp.Chart.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:55</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.ExpressApp.CloneObject.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:55</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.ExpressApp.FileAttachment.Web.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:55</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.ExpressApp.Kpi.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.ExpressApp.Maps.Web.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.ExpressApp.Notifications.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.ExpressApp.Notifications.Web.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.ExpressApp.Objects.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.ExpressApp.Office.Web.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.ExpressApp.PivotChart.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.ExpressApp.PivotChart.Web.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.ExpressApp.Security.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.ExpressApp.Security.Xpo.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.ExpressApp.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.ExpressApp.Validation.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.ExpressApp.Web.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Office.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Pdf.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Persistent.Base.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.PivotGrid.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:08</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Printing.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.RichEdit.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:09</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Sparkline.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Spreadsheet.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:09</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Utils.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:07:04</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Web.ASPxHtmlEditor.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:50</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Web.ASPxRichEdit.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:50</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Web.ASPxSpellChecker.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:50</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Web.ASPxSpreadsheet.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Web.ASPxTreeList.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:51</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Web.Resources.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:07:05</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Web.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:50</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.Xpo.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:07:08</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.XtraCharts.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:07:08</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.XtraGauges.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:08</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.XtraReports.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:07:08</publishTime>
+    </File>
+    <File Include="bin/de/DevExpress.XtraScheduler.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:09</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Charts.v21.1.Core.dll">
+      <publishTime>06/14/2022 00:07:08</publishTime>
+    </File>
+    <File Include="bin/DevExpress.CodeParser.v21.1.dll">
+      <publishTime>06/14/2022 00:06:52</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Data.Desktop.v21.1.dll">
+      <publishTime>06/14/2022 00:06:53</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Data.v21.1.dll">
+      <publishTime>06/14/2022 00:06:53</publishTime>
+    </File>
+    <File Include="bin/DevExpress.DataAccess.v21.1.dll">
+      <publishTime>06/14/2022 00:06:53</publishTime>
+    </File>
+    <File Include="bin/DevExpress.DataVisualization.v21.1.Core.dll">
+      <publishTime>06/14/2022 00:06:53</publishTime>
+    </File>
+    <File Include="bin/DevExpress.ExpressApp.AuditTrail.v21.1.dll">
+      <publishTime>06/14/2022 00:06:55</publishTime>
+    </File>
+    <File Include="bin/DevExpress.ExpressApp.Chart.v21.1.dll">
+      <publishTime>06/14/2022 00:06:55</publishTime>
+    </File>
+    <File Include="bin/DevExpress.ExpressApp.Chart.Web.v21.1.dll">
+      <publishTime>06/14/2022 00:06:55</publishTime>
+    </File>
+    <File Include="bin/DevExpress.ExpressApp.CloneObject.v21.1.dll">
+      <publishTime>06/14/2022 00:06:55</publishTime>
+    </File>
+    <File Include="bin/DevExpress.ExpressApp.ConditionalAppearance.v21.1.dll">
+      <publishTime>06/14/2022 00:06:55</publishTime>
+    </File>
+    <File Include="bin/DevExpress.ExpressApp.FileAttachment.Web.v21.1.dll">
+      <publishTime>06/14/2022 00:06:55</publishTime>
+    </File>
+    <File Include="bin/DevExpress.ExpressApp.HtmlPropertyEditor.Web.v21.1.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/DevExpress.ExpressApp.Kpi.v21.1.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/DevExpress.ExpressApp.Maps.Web.v21.1.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/DevExpress.ExpressApp.Notifications.v21.1.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/DevExpress.ExpressApp.Notifications.Web.v21.1.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/DevExpress.ExpressApp.Objects.v21.1.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/DevExpress.ExpressApp.Office.v21.1.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/DevExpress.ExpressApp.Office.Web.v21.1.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/DevExpress.ExpressApp.PivotChart.v21.1.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/DevExpress.ExpressApp.PivotChart.Web.v21.1.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/DevExpress.ExpressApp.Security.v21.1.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/DevExpress.ExpressApp.Security.Xpo.v21.1.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/DevExpress.ExpressApp.TreeListEditors.v21.1.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/DevExpress.ExpressApp.TreeListEditors.Web.v21.1.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/DevExpress.ExpressApp.v21.1.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/DevExpress.ExpressApp.Validation.v21.1.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/DevExpress.ExpressApp.Validation.Web.v21.1.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/DevExpress.ExpressApp.Web.v21.1.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/DevExpress.ExpressApp.Xpo.v21.1.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Images.v21.1.dll">
+      <publishTime>06/14/2022 00:06:58</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Office.v21.1.Core.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Pdf.v21.1.Core.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Pdf.v21.1.Drawing.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Persistent.Base.v21.1.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Persistent.BaseImpl.v21.1.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/DevExpress.PivotGrid.v21.1.Core.dll">
+      <publishTime>06/14/2022 00:07:08</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Printing.v21.1.Core.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/DevExpress.RichEdit.v21.1.Core.dll">
+      <publishTime>06/14/2022 00:07:09</publishTime>
+    </File>
+    <File Include="bin/DevExpress.RichEdit.v21.1.Export.dll">
+      <publishTime>06/14/2022 00:07:09</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Sparkline.v21.1.Core.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/DevExpress.SpellChecker.v21.1.Core.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Spreadsheet.v21.1.Core.dll">
+      <publishTime>06/14/2022 00:07:09</publishTime>
+    </File>
+    <File Include="bin/DevExpress.TreeMap.v21.1.Core.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Utils.v21.1.dll">
+      <publishTime>06/14/2022 00:07:04</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.ASPxHtmlEditor.v21.1.dll">
+      <publishTime>06/14/2022 00:06:50</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.ASPxPivotGrid.v21.1.dll">
+      <publishTime>06/14/2022 00:06:50</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.ASPxRichEdit.v21.1.dll">
+      <publishTime>06/14/2022 00:06:50</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.ASPxSpellChecker.v21.1.dll">
+      <publishTime>06/14/2022 00:06:50</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.ASPxSpreadsheet.v21.1.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.ASPxThemes.v21.1.dll">
+      <publishTime>06/14/2022 00:06:51</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.ASPxTreeList.v21.1.dll">
+      <publishTime>06/14/2022 00:06:51</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.Resources.v21.1.dll">
+      <publishTime>06/14/2022 00:07:05</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.v21.1.dll">
+      <publishTime>06/14/2022 00:06:50</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Xpo.v21.1.dll">
+      <publishTime>06/14/2022 00:07:08</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraCharts.v21.1.dll">
+      <publishTime>06/14/2022 00:07:08</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraCharts.v21.1.Web.dll">
+      <publishTime>06/14/2022 00:06:50</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraGauges.v21.1.Core.dll">
+      <publishTime>06/14/2022 00:07:08</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraReports.v21.1.dll">
+      <publishTime>06/14/2022 00:07:08</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraScheduler.v21.1.Core.dll">
+      <publishTime>06/14/2022 00:07:09</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraTreeMap.v21.1.dll">
+      <publishTime>06/14/2022 00:07:09</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Data.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:53</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.DataAccess.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:53</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.ExpressApp.AuditTrail.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:55</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.ExpressApp.Chart.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:55</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.ExpressApp.CloneObject.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:55</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.ExpressApp.FileAttachment.Web.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:55</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.ExpressApp.Kpi.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.ExpressApp.Maps.Web.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.ExpressApp.Notifications.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.ExpressApp.Notifications.Web.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.ExpressApp.Objects.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.ExpressApp.Office.Web.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.ExpressApp.PivotChart.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.ExpressApp.PivotChart.Web.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.ExpressApp.Security.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.ExpressApp.Security.Xpo.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.ExpressApp.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.ExpressApp.Validation.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.ExpressApp.Web.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Office.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Pdf.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Persistent.Base.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.PivotGrid.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:08</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Printing.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.RichEdit.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:09</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Sparkline.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Spreadsheet.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:09</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Utils.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:07:04</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Web.ASPxHtmlEditor.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:50</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Web.ASPxRichEdit.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:50</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Web.ASPxSpellChecker.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:50</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Web.ASPxSpreadsheet.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Web.ASPxTreeList.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:51</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Web.Resources.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:07:05</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Web.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:50</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.Xpo.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:07:08</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.XtraCharts.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:07:08</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.XtraGauges.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:08</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.XtraReports.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:07:08</publishTime>
+    </File>
+    <File Include="bin/es/DevExpress.XtraScheduler.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:09</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Data.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:53</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.DataAccess.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:53</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.ExpressApp.AuditTrail.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:55</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.ExpressApp.Chart.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:55</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.ExpressApp.CloneObject.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:55</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.ExpressApp.FileAttachment.Web.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:55</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.ExpressApp.Kpi.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.ExpressApp.Maps.Web.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.ExpressApp.Notifications.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.ExpressApp.Notifications.Web.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.ExpressApp.Objects.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.ExpressApp.Office.Web.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.ExpressApp.PivotChart.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.ExpressApp.PivotChart.Web.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.ExpressApp.Security.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.ExpressApp.Security.Xpo.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.ExpressApp.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.ExpressApp.Validation.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.ExpressApp.Web.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Office.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Pdf.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Persistent.Base.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.PivotGrid.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:08</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Printing.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.RichEdit.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:09</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Sparkline.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Spreadsheet.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:09</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Utils.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:07:04</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Web.ASPxHtmlEditor.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:50</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Web.ASPxRichEdit.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:50</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Web.ASPxSpellChecker.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:50</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Web.ASPxSpreadsheet.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Web.ASPxTreeList.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:51</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Web.Resources.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:07:05</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Web.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:50</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.Xpo.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:07:08</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.XtraCharts.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:07:08</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.XtraGauges.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:08</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.XtraReports.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:07:08</publishTime>
+    </File>
+    <File Include="bin/ja/DevExpress.XtraScheduler.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:09</publishTime>
+    </File>
+    <File Include="bin/mn/Road.Inspection.Module.resources.dll">
+      <publishTime>08/01/2022 12:55:33</publishTime>
+    </File>
+    <File Include="bin/mn/Road.Inspection.Module.Web.resources.dll">
+      <publishTime>08/01/2022 12:55:34</publishTime>
+    </File>
+    <File Include="bin/Road.Inspection.Module.dll">
+      <publishTime>08/01/2022 12:55:33</publishTime>
+    </File>
+    <File Include="bin/Road.Inspection.Module.pdb">
+      <publishTime>08/01/2022 12:55:33</publishTime>
+    </File>
+    <File Include="bin/Road.Inspection.Module.Web.dll">
+      <publishTime>08/01/2022 12:55:34</publishTime>
+    </File>
+    <File Include="bin/Road.Inspection.Module.Web.pdb">
+      <publishTime>08/01/2022 12:55:34</publishTime>
+    </File>
+    <File Include="bin/Road.Inspection.Web.dll">
+      <publishTime>08/01/2022 12:55:34</publishTime>
+    </File>
+    <File Include="bin/Road.Inspection.Web.pdb">
+      <publishTime>08/01/2022 12:55:34</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Data.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:53</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.DataAccess.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:53</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.ExpressApp.AuditTrail.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:55</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.ExpressApp.Chart.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:55</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.ExpressApp.CloneObject.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:55</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.ExpressApp.FileAttachment.Web.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:55</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.ExpressApp.Kpi.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.ExpressApp.Maps.Web.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.ExpressApp.Notifications.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.ExpressApp.Notifications.Web.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.ExpressApp.Objects.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.ExpressApp.Office.Web.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.ExpressApp.PivotChart.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.ExpressApp.PivotChart.Web.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.ExpressApp.Security.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.ExpressApp.Security.Xpo.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.ExpressApp.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.ExpressApp.Validation.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.ExpressApp.Web.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:57</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Office.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Pdf.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Persistent.Base.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.PivotGrid.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:08</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Printing.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.RichEdit.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:09</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Sparkline.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Spreadsheet.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:09</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Utils.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:07:04</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Web.ASPxHtmlEditor.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:50</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Web.ASPxRichEdit.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:50</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Web.ASPxSpellChecker.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:50</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Web.ASPxSpreadsheet.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:07:03</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Web.ASPxTreeList.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:51</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Web.Resources.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:07:05</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Web.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:06:50</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.Xpo.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:07:08</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.XtraCharts.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:07:08</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.XtraGauges.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:08</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.XtraReports.v21.1.resources.dll">
+      <publishTime>06/14/2022 00:07:08</publishTime>
+    </File>
+    <File Include="bin/ru/DevExpress.XtraScheduler.v21.1.Core.resources.dll">
+      <publishTime>06/14/2022 00:07:09</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>06/21/2022 10:51:14</publishTime>
+    </File>
+    <File Include="Error.aspx">
+      <publishTime>06/21/2022 10:51:14</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>06/21/2022 10:51:14</publishTime>
+    </File>
+    <File Include="Images/Logo.svg">
+      <publishTime>07/18/2022 11:43:07</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>06/21/2022 10:51:14</publishTime>
+    </File>
+    <File Include="Model.Desktop.xafml">
+      <publishTime>06/21/2022 10:51:14</publishTime>
+    </File>
+    <File Include="Model.Tablet.xafml">
+      <publishTime>06/21/2022 10:51:14</publishTime>
+    </File>
+    <File Include="Model.xafml">
+      <publishTime>06/21/2022 10:51:14</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/20/2022 16:09:23</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
