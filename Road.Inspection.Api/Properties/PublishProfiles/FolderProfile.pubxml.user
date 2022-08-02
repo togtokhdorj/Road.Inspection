@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>D:\Project\Road.Inspection\Road.Inspection.Api\publish</_PublishTargetUrl>
-    <History>True|2022-08-02T06:06:11.7363781Z;True|2022-08-01T15:51:06.2764374+08:00;True|2022-08-01T14:29:56.4588863+08:00;True|2022-07-26T15:36:23.7871027+08:00;True|2022-07-26T15:36:10.1923786+08:00;</History>
+    <History>True|2022-08-02T09:54:08.9893400Z;True|2022-08-02T17:45:41.2530053+08:00;True|2022-08-02T17:42:24.2431399+08:00;False|2022-08-02T17:42:10.5916348+08:00;True|2022-08-02T14:06:11.7363781+08:00;True|2022-08-01T15:51:06.2764374+08:00;True|2022-08-01T14:29:56.4588863+08:00;True|2022-07-26T15:36:23.7871027+08:00;True|2022-07-26T15:36:10.1923786+08:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="Areas/HelpPage/HelpPage.css">
@@ -114,10 +114,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>07/18/2022 14:28:38</publishTime>
     </File>
     <File Include="bin/Road.Inspection.Api.dll">
-      <publishTime>08/02/2022 14:06:09</publishTime>
+      <publishTime>08/02/2022 17:54:08</publishTime>
     </File>
     <File Include="bin/Road.Inspection.Api.pdb">
-      <publishTime>08/02/2022 14:06:09</publishTime>
+      <publishTime>08/02/2022 17:54:08</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>07/18/2022 14:28:38</publishTime>
