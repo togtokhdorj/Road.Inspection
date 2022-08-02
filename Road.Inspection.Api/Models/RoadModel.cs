@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -72,11 +73,11 @@ namespace Road.Inspection.Api.Models
 		public List<RoadItemDto> roadBridgeInjury;
 		public List<RoadItemDto> roadDrainge;
 		public List<RoadItemDto> roadEdgeSideSlope;
-		public List<RoadItemDto> roadLane;
 		public List<RoadItemDto> roadServiceFacility;
 		public List<RoadItemDto> smoothnessRoadway;
+		public List<RoadItemDto> roadLane;
 
-		
+
 		public static SqlParameter[] insertSqlParams(RoadDto level)
 		{
 			return new SqlParameter[]
@@ -131,6 +132,7 @@ namespace Road.Inspection.Api.Models
 		public string code;
 		public string measure;
 		public string image;
+		public int type;
 		public static SqlParameter[] insertSqlParams(RoadItemDto param, int type)
         {
 			return new SqlParameter[]

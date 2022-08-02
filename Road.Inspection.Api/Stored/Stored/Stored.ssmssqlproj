@@ -26,10 +26,16 @@
           <FullPath>sp_level_readiness_create.sql</FullPath>
         </FileNode>
         <FileNode Name="sp_level_readiness_get.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:103.48.116.72,1456:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>103.48.116.72,1456</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
           <FullPath>sp_level_readiness_get.sql</FullPath>
+        </FileNode>
+        <FileNode Name="sp_level_readiness_update.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:103.48.116.72,1456:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>103.48.116.72,1456</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>sp_level_readiness_update.sql</FullPath>
         </FileNode>
         <FileNode Name="sp_road_inspection_create.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:103.48.116.72,1456:False:sa</AssociatedConnectionMoniker>

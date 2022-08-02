@@ -2,6 +2,7 @@
 using Road.Inspection.Api.Models;
 using Road.Inspection.Api.Service;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -26,7 +27,7 @@ namespace Road.Inspection.Api.Controllers
             {
                 ResultDto resultDto = new ResultDto();
                 string json = data.Content.ReadAsStringAsync().Result;
-                LevelReadinessDto param = JsonConvert.DeserializeObject<LevelReadinessDto>(json);
+                LevelReadiness param = JsonConvert.DeserializeObject<LevelReadiness>(json);
                 if (param == null)
                     return Request.CreateResponse(HttpStatusCode.NotFound, ResultDto.error(false, "Өгөгдөл хоосон илгээж байна."));
                 else
@@ -49,7 +50,7 @@ namespace Road.Inspection.Api.Controllers
             {
                 ResultDto resultDto = new ResultDto();
                 string json = data.Content.ReadAsStringAsync().Result;
-                LevelReadinessDto param = JsonConvert.DeserializeObject<LevelReadinessDto>(json);
+                LevelReadiness param = JsonConvert.DeserializeObject<LevelReadiness>(json);
                 if (param == null)
                     return Request.CreateResponse(HttpStatusCode.NotFound, ResultDto.error(false, "Өгөгдөл хоосон илгээж байна."));
                 else
@@ -64,15 +65,13 @@ namespace Road.Inspection.Api.Controllers
             }
         }
         [HttpGet]
-        [Route("level/readiness/get")]
-        [ResponseType(typeof(ResultDto))]
-        public HttpResponseMessage GetItems(string id)
+        [Route("level/readiness")]
+        [ResponseType(typeof(List<LevelReadiness>))]
+        public HttpResponseMessage GetItems(string id = null)
         {
             try
             {
-                ResultDto resultDto = new ResultDto();
-                resultDto.data = service.GetItems(id);
-                return Request.CreateResponse(HttpStatusCode.OK, resultDto);
+                return Request.CreateResponse(HttpStatusCode.OK, service.GetItems(id));
             }
             catch (Exception ex)
             {

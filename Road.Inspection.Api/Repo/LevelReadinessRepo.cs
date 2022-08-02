@@ -7,14 +7,14 @@ using System.Web;
 
 namespace Road.Inspection.Api.Repo
 {
-    public class LevelReadinessRepo : BaseRepo<LevelReadinessDto>
+    public class LevelReadinessRepo : BaseRepo<LevelReadiness>
     {
-        LevelReadinessDto dto;
-        List<LevelReadinessDto> dtos;
+        LevelReadiness dto;
+        List<LevelReadiness> dtos;
 
-        public override LevelReadinessDto PopulateRecord(IDataReader reader)
+        public override LevelReadiness PopulateRecord(IDataReader reader)
         {
-            dto = new LevelReadinessDto();
+            dto = new LevelReadiness();
             if (reader["id"] != DBNull.Value)
                 dto.id = Guid.Parse(string.Concat(reader["id"]));
             if (reader["totalKilometrs"] != DBNull.Value)
@@ -52,45 +52,53 @@ namespace Road.Inspection.Api.Repo
             dtos.Add(dto);
             return dto;
         }
-        public override LevelReadinessDto PopulateSecondRecord(IDataReader reader)
+        public override LevelReadiness PopulateSecondRecord(IDataReader reader)
         {
             return null;
         }
-        public override LevelReadinessDto PopulateThirdRecord(IDataReader reader)
+        public override LevelReadiness PopulateThirdRecord(IDataReader reader)
         {
             return null;
         }
-        public override LevelReadinessDto PopulateFourthRecord(IDataReader reader)
+        public override LevelReadiness PopulateFourthRecord(IDataReader reader)
         {
             return null;
         }
-        public override LevelReadinessDto PopulateFifthRecord(IDataReader reader)
+        public override LevelReadiness PopulateFifthRecord(IDataReader reader)
         {
             return null;
         }
-        public override LevelReadinessDto PopulateSixthRecord(IDataReader reader)
+        public override LevelReadiness PopulateSixthRecord(IDataReader reader)
         {
             return null;
         }
-        public override LevelReadinessDto PopulateSeventhRecord(IDataReader reader)
+        public override LevelReadiness PopulateSeventhRecord(IDataReader reader)
         {
             return null;
         }
-        public ResultDto Create(LevelReadinessDto param)
+        public ResultDto Create(LevelReadiness param)
         {
-            base.ExecuteNonQuery("dbo.sp_level_readiness_create", LevelReadinessDto.insertSqlParams(param), CommandType.StoredProcedure);
-            return ResultDto.success(true,"Амжилттай хадгалагдлаа");
-        }
-        public ResultDto Update(LevelReadinessDto param)
-        {
-            base.ExecuteNonQuery("dbo.sp_level_readiness_update", LevelReadinessDto.updateSqlParams(param), CommandType.StoredProcedure);
+            base.ExecuteNonQuery("dbo.sp_level_readiness_create", LevelReadiness.insertSqlParams(param), CommandType.StoredProcedure);
             return ResultDto.success(true, "Амжилттай хадгалагдлаа");
         }
-        public List<LevelReadinessDto> GetItems(string id)
+        public ResultDto Update(LevelReadiness param)
         {
-            dtos = new List<LevelReadinessDto>();
-            base.Get("dbo.sp_level_readiness_get", LevelReadinessDto.getSqlParams(id), CommandType.StoredProcedure);
-            return dtos;
+            base.ExecuteNonQuery("dbo.sp_level_readiness_update", LevelReadiness.updateSqlParams(param), CommandType.StoredProcedure);
+            return ResultDto.success(true, "Амжилттай хадгалагдлаа");
+        }
+        public ResultDto GetItems(string id)
+        {
+            dtos = new List<LevelReadiness>();
+            if (id == null)
+            {
+                base.Get("dbo.sp_level_readiness_get", LevelReadiness.getSqlParams(id), CommandType.StoredProcedure);
+                return ResultDto.success(data: dtos);
+            }
+            else
+            {
+                base.Get("dbo.sp_level_readiness_get", LevelReadiness.getSqlParams(id), CommandType.StoredProcedure);
+                return ResultDto.success(data: dto);
+            }
         }
     }
 }

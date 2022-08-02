@@ -21,8 +21,8 @@ namespace Road.Inspection.Api.Repo
         public override RoadDto PopulateRecord(IDataReader reader)
         {
             dto = new RoadDto();
-            if (reader["id"] != DBNull.Value)
-                dto.id = Guid.Parse(string.Concat(reader["id"]));
+            if (reader["Oid"] != DBNull.Value)
+                dto.id = Guid.Parse(string.Concat(reader["Oid"]));
             if (reader["teamLeader"] != DBNull.Value)
                 dto.teamLeader = string.Concat(reader["teamLeader"]);
             if (reader["inspectionEngineer"] != DBNull.Value)
@@ -46,13 +46,13 @@ namespace Road.Inspection.Api.Repo
             if (reader["endPoint"] != DBNull.Value)
                 dto.endPoint = string.Concat(reader["endPoint"]);
             if (reader["kilometr"] != DBNull.Value)
-                dto.kilometr = string.Concat(reader["kilometr"]);
+                dto.kilometr = int.Parse(reader["kilometr"].ToString());
             if (reader["kilometrs"] != DBNull.Value)
-                dto.kilometrs = string.Concat(reader["kilometrs"]);
+                dto.kilometrs = int.Parse(reader["kilometrs"].ToString());
             if (reader["endCoordinates"] != DBNull.Value)
                 dto.endCoordinates = string.Concat(reader["endCoordinates"]);
             if (reader["degrees"] != DBNull.Value)
-                dto.degrees = string.Concat(reader["degrees"]);
+                dto.degrees = int.Parse(reader["degrees"].ToString());
             if (reader["beforeLeftLane"] != DBNull.Value)
                 dto.beforeLeftLane = string.Concat(reader["beforeLeftLane"]);
             if (reader["beforeRightLane"] != DBNull.Value)
@@ -282,7 +282,6 @@ namespace Road.Inspection.Api.Repo
         }
         public ResultDto RoadItemCreate(RoadItemDto param, int type)
         {
-
             base.ExecuteNonQuery("dbo.sp_road_item_create", RoadItemDto.insertSqlParams(param, type), CommandType.StoredProcedure);
             return ResultDto.success(true, "Амжилттай хадгалагдлаа");
         }

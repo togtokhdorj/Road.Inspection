@@ -6,9 +6,9 @@ using System.Web;
 
 namespace Road.Inspection.Api.Models
 {
-    public class LevelReadinessDto
+    public class LevelReadiness
 	{
-        public LevelReadinessDto()
+        public LevelReadiness()
         {
 			startCoordinateLength = "";
 			startCoordinateLatitude = "";
@@ -37,7 +37,7 @@ namespace Road.Inspection.Api.Models
 		public int kilometrs;
 		public int totalKilometrs;
 		public DateTime date;
-		public static SqlParameter[] insertSqlParams(LevelReadinessDto level)
+		public static SqlParameter[] insertSqlParams(LevelReadiness level)
 		{
 			return new SqlParameter[]
 			{
@@ -59,12 +59,11 @@ namespace Road.Inspection.Api.Models
 				 new SqlParameter("@date", level.date),
 			};
 		}
-		public static SqlParameter[] updateSqlParams(LevelReadinessDto level)
+		public static SqlParameter[] updateSqlParams(LevelReadiness level)
 		{
 			return new SqlParameter[]
 			{
 				 new SqlParameter("@id", level.id),
-				 new SqlParameter("@startCoordinateLength", level.startCoordinateLength),
 				 new SqlParameter("@startCoordinateLength", level.startCoordinateLength),
 				 new SqlParameter("@startCoordinateLatitude", level.startCoordinateLatitude),
 				 new SqlParameter("@endCoordinateLength", level.endCoordinateLength),

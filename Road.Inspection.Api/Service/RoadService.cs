@@ -70,6 +70,10 @@ namespace Road.Inspection.Api.Service
                 return ResultDto.error(msg: ex.Message);
             }
         }
+        public ResultDto CreateRoadItem(RoadItemDto param)
+        {
+            return repo.RoadItemCreate(param, param.type);
+        }
         public List<RoadDto> GetRoads()
         {
             return repo.GetRoads();

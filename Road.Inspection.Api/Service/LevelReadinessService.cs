@@ -15,15 +15,15 @@ namespace Road.Inspection.Api.Service
         {
             repo = new LevelReadinessRepo();
         }
-        public ResultDto Create(LevelReadinessDto level)
+        public ResultDto Create(LevelReadiness level)
         {
             return repo.Create(level);
         }
-        public ResultDto Update(LevelReadinessDto level)
+        public ResultDto Update(LevelReadiness level)
         {
             return repo.Update(level);
         }
-        public List<LevelReadinessDto> GetItems(string id)
+        public ResultDto GetItems(string id)
         {
             return repo.GetItems(id);
         }

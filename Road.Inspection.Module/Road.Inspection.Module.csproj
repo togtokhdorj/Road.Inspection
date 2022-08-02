@@ -146,6 +146,8 @@
     <Compile Include="BusinessObjects\Enum.cs" />
     <Compile Include="BusinessObjects\LevelReadiness\LevelReadiness.cs" />
     <Compile Include="BusinessObjects\RoadInspection\RoadBridgeInjury.cs" />
+    <Compile Include="BusinessObjects\RoadInspection\RoadCrashCodeItem.cs" />
+    <Compile Include="BusinessObjects\RoadInspection\RoadCrashCode.cs" />
     <Compile Include="BusinessObjects\RoadInspection\RoadCode.cs" />
     <Compile Include="BusinessObjects\RoadInspection\RoadDrainge.cs" />
     <Compile Include="BusinessObjects\RoadInspection\RoadEdgeSideSlope.cs" />

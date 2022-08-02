@@ -40,6 +40,29 @@ namespace Road.Inspection.Api.Controllers
                 return Request.CreateResponse(HttpStatusCode.OK, ResultDto.error(false, ex.Message));
             }
         }
+        [HttpPost]
+        [Route("road/inspection/item")]
+        [ResponseType(typeof(ResultDto))]
+        public HttpResponseMessage CreateRoadItem(HttpRequestMessage data)
+        {
+            try
+            {
+                ResultDto resultDto = new ResultDto();
+                string json = data.Content.ReadAsStringAsync().Result;
+                RoadItemDto param = JsonConvert.DeserializeObject<RoadItemDto>(json);
+                if (param == null)
+                    return Request.CreateResponse(HttpStatusCode.NotFound, ResultDto.error(false, "Өгөгдөл хоосон илгээж байна."));
+                else
+                {
+                    resultDto = service.CreateRoadItem(param);
+                    return Request.CreateResponse(HttpStatusCode.OK, resultDto);
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, ResultDto.error(false, ex.Message));
+            }
+        }
         [HttpGet]
         [Route("road/inspection/get")]
         [ResponseType(typeof(ResultDto))]

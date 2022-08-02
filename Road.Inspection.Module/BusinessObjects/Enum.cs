@@ -43,6 +43,15 @@ namespace Road.Inspection.Module.BusinessObjects
         O4 = 4,
         [XafDisplayName("5")]
         O5 = 5
+    }
 
+    public enum Measure
+    {
+        [XafDisplayName("Сонгох")]
+        None = 0,
+        [XafDisplayName("м2")]
+        m2 = 1,
+        [XafDisplayName("ширхэг")]
+        unit = 2
     }
 }
