@@ -26,7 +26,6 @@ namespace Road.Inspection.Api.Models
 			};
 		}
 	}
-
 	public class RoadCrashCodeItem
 	{
 		public RoadCrashCodeItem()
