@@ -128,6 +128,10 @@ namespace Road.Inspection.Module.BusinessObjects
         [XafDisplayName("Зам хариуцагчийн нэр"), Size(25)]
         public string roadManager { get { return _roadManager; } set { SetPropertyValue(nameof(roadManager), ref _roadManager, value); } }
 
+        private string _companyName;
+        [XafDisplayName("Зам хариуцагч компани нэр"), Size(25)]
+        public string companyName { get { return _companyName; } set { SetPropertyValue(nameof(companyName), ref _companyName, value); } }
+
         private string _roadPositions;
         [XafDisplayName("Зам хариуцагчийн албан тушаал"), Size(8)]
         public string roadPositions { get { return _roadPositions; } set { SetPropertyValue(nameof(roadPositions), ref _roadPositions, value); } }
@@ -159,7 +163,6 @@ namespace Road.Inspection.Module.BusinessObjects
         [DevExpress.Xpo.Aggregated, Association]
         [XafDisplayName("Үйлчилгээний байгууламжийн эвдрэл")]
         public XPCollection<RoadServiceFacility> roadServiceFacilities { get { return GetCollection<RoadServiceFacility>(nameof(roadServiceFacilities)); } }
-
 
     }
 }
