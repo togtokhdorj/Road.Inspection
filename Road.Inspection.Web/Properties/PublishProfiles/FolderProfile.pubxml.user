@@ -555,28 +555,28 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>06/14/2022 00:07:09</publishTime>
     </File>
     <File Include="bin/mn/Road.Inspection.Module.resources.dll">
-      <publishTime>08/03/2022 14:18:34</publishTime>
+      <publishTime>08/31/2022 08:28:46</publishTime>
     </File>
     <File Include="bin/mn/Road.Inspection.Module.Web.resources.dll">
-      <publishTime>08/03/2022 14:18:35</publishTime>
+      <publishTime>08/31/2022 08:28:46</publishTime>
     </File>
     <File Include="bin/Road.Inspection.Module.dll">
-      <publishTime>08/03/2022 14:18:34</publishTime>
+      <publishTime>08/31/2022 08:28:46</publishTime>
     </File>
     <File Include="bin/Road.Inspection.Module.pdb">
-      <publishTime>08/03/2022 14:18:34</publishTime>
+      <publishTime>08/31/2022 08:28:46</publishTime>
     </File>
     <File Include="bin/Road.Inspection.Module.Web.dll">
-      <publishTime>08/03/2022 14:18:35</publishTime>
+      <publishTime>08/31/2022 08:28:46</publishTime>
     </File>
     <File Include="bin/Road.Inspection.Module.Web.pdb">
-      <publishTime>08/03/2022 14:18:35</publishTime>
+      <publishTime>08/31/2022 08:28:46</publishTime>
     </File>
     <File Include="bin/Road.Inspection.Web.dll">
-      <publishTime>08/03/2022 14:18:35</publishTime>
+      <publishTime>08/31/2022 08:28:46</publishTime>
     </File>
     <File Include="bin/Road.Inspection.Web.pdb">
-      <publishTime>08/03/2022 14:18:35</publishTime>
+      <publishTime>08/31/2022 08:28:46</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.Data.v21.1.resources.dll">
       <publishTime>06/14/2022 00:06:53</publishTime>

@@ -39,14 +39,27 @@ namespace Road.Inspection.Module.BusinessObjects
         [XafDisplayName("Код"), Size(20)]
         public string code { get { return _code; } set { SetPropertyValue(nameof(code), ref _code, value); } }
 
+        private string _qty;
+        [XafDisplayName("Тоо/хэмжээ")]
+        [Size(20)]
+        public string qty { get { return _qty; } set { SetPropertyValue(nameof(qty), ref _qty, value); } }
+
         private string _measure;
         [XafDisplayName("Хэмжих нэгж")]
         [Size(20)]
         public string measure { get { return _measure; } set { SetPropertyValue(nameof(measure), ref _measure, value); } }
 
-        private string _image;
-        [XafDisplayName("Зураг"),]
-        public string image { get { return _image; } set { SetPropertyValue(nameof(image), ref _image, value); } }
+        private string _image1;
+        [XafDisplayName("Зураг 1"), Size(SizeAttribute.Unlimited)]
+        public string image1 { get { return _image1; } set { SetPropertyValue(nameof(image1), ref _image1, value); } }
+
+        private string _image2;
+        [XafDisplayName("Зураг 2"), Size(SizeAttribute.Unlimited)]
+        public string image2 { get { return _image2; } set { SetPropertyValue(nameof(image2), ref _image2, value); } }
+
+        private string _image3;
+        [XafDisplayName("Зураг 3"), Size(SizeAttribute.Unlimited)]
+        public string image3 { get { return _image3; } set { SetPropertyValue(nameof(image3), ref _image3, value); } }
 
         //private RoadInspection _roadInspectionId;
         //[Association]

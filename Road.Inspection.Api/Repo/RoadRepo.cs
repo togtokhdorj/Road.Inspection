@@ -41,18 +41,22 @@ namespace Road.Inspection.Api.Repo
                 dto.roadDirection = string.Concat(reader["roadDirection"]);
             if (reader["category"] != DBNull.Value)
                 dto.category = string.Concat(reader["category"]);
-            if (reader["startPoint"] != DBNull.Value)
-                dto.startPoint = string.Concat(reader["startPoint"]);
-            if (reader["endPoint"] != DBNull.Value)
-                dto.endPoint = string.Concat(reader["endPoint"]);
+            if (reader["startPointN"] != DBNull.Value)
+                dto.startPointN = string.Concat(reader["startPointN"]);
+            if (reader["startPointE"] != DBNull.Value)
+                dto.startPointE = string.Concat(reader["startPointE"]);
+            if (reader["endPointE"] != DBNull.Value)
+                dto.endPointE = string.Concat(reader["endPointE"]);
+            if (reader["endPointN"] != DBNull.Value)
+                dto.endPointN = string.Concat(reader["endPointN"]);
             if (reader["kilometr"] != DBNull.Value)
-                dto.kilometr = int.Parse(reader["kilometr"].ToString());
+                dto.kilometr = reader["kilometr"].ToString();
             if (reader["kilometrs"] != DBNull.Value)
-                dto.kilometrs = int.Parse(reader["kilometrs"].ToString());
-            if (reader["endCoordinates"] != DBNull.Value)
-                dto.endCoordinates = string.Concat(reader["endCoordinates"]);
+                dto.kilometrs = reader["kilometrs"].ToString();
             if (reader["degrees"] != DBNull.Value)
-                dto.degrees = int.Parse(reader["degrees"].ToString());
+                dto.degrees = reader["degrees"].ToString();
+            if (reader["beforeLaneDate"] != DBNull.Value)
+                dto.beforeLaneDate = string.Concat(reader["beforeLaneDate"]);
             if (reader["beforeLeftLane"] != DBNull.Value)
                 dto.beforeLeftLane = string.Concat(reader["beforeLeftLane"]);
             if (reader["beforeRightLane"] != DBNull.Value)
@@ -79,6 +83,8 @@ namespace Road.Inspection.Api.Repo
         public override RoadDto PopulateSecondRecord(IDataReader reader)
         {
             roadBridgeInjuryDto = new RoadItemDto();
+            if (reader["Oid"] != DBNull.Value)
+                roadBridgeInjuryDto.id = Guid.Parse(string.Concat(reader["Oid"]));
             if (reader["inspectionId"] != DBNull.Value)
                 roadBridgeInjuryDto.inspectionId = Guid.Parse(string.Concat(reader["inspectionId"]));
             if (reader["location"] != DBNull.Value)
@@ -89,21 +95,27 @@ namespace Road.Inspection.Api.Repo
                 roadBridgeInjuryDto.latitude = string.Concat(reader["latitude"]);
             if (reader["code"] != DBNull.Value)
                 roadBridgeInjuryDto.code = string.Concat(reader["code"]);
+            if (reader["qty"] != DBNull.Value)
+                roadBridgeInjuryDto.qty = string.Concat(reader["qty"]);
             if (reader["measure"] != DBNull.Value)
                 roadBridgeInjuryDto.measure = string.Concat(reader["measure"]);
-            if (reader["image"] != DBNull.Value)
-                roadBridgeInjuryDto.image = string.Concat(reader["image"]);
+            if (reader["image1"] != DBNull.Value)
+                roadBridgeInjuryDto.image1 = string.Concat(reader["image1"]);
+            if (reader["image2"] != DBNull.Value)
+                roadBridgeInjuryDto.image2 = string.Concat(reader["image2"]);
+            if (reader["image3"] != DBNull.Value)
+                roadBridgeInjuryDto.image3 = string.Concat(reader["image3"]);
 
             if (roadBridgeInjuryDto.inspectionId != null)
             {
                 if (dtos != null)
                 {
                     if (dtos.Any(x => x.id == roadBridgeInjuryDto.inspectionId))
-                        dtos.Where(x => x.id == roadBridgeInjuryDto.inspectionId).FirstOrDefault().roadBridgeInjury.Add(roadBridgeInjuryDto);
+                        dtos.Where(x => x.id == roadBridgeInjuryDto.inspectionId).FirstOrDefault().roadBridgeInjuries.Add(roadBridgeInjuryDto);
                 }
                 else if (dto != null)
                 {
-                    dto.roadBridgeInjury.Add(roadBridgeInjuryDto);
+                    dto.roadBridgeInjuries.Add(roadBridgeInjuryDto);
                 }
             }
             return null;
@@ -121,21 +133,27 @@ namespace Road.Inspection.Api.Repo
                 roadDraingeDto.latitude = string.Concat(reader["latitude"]);
             if (reader["code"] != DBNull.Value)
                 roadDraingeDto.code = string.Concat(reader["code"]);
+            if (reader["qty"] != DBNull.Value)
+                roadDraingeDto.qty = string.Concat(reader["qty"]);
             if (reader["measure"] != DBNull.Value)
                 roadDraingeDto.measure = string.Concat(reader["measure"]);
-            if (reader["image"] != DBNull.Value)
-                roadDraingeDto.image = string.Concat(reader["image"]);
+            if (reader["image1"] != DBNull.Value)
+                roadDraingeDto.image1 = string.Concat(reader["image1"]);
+            if (reader["image2"] != DBNull.Value)
+                roadDraingeDto.image2 = string.Concat(reader["image2"]);
+            if (reader["image3"] != DBNull.Value)
+                roadDraingeDto.image3 = string.Concat(reader["image3"]);
 
             if (roadDraingeDto.inspectionId != null)
             {
                 if (dtos != null)
                 {
                     if (dtos.Any(x => x.id == roadDraingeDto.inspectionId))
-                        dtos.Where(x => x.id == roadDraingeDto.inspectionId).FirstOrDefault().roadDrainge.Add(roadDraingeDto);
+                        dtos.Where(x => x.id == roadDraingeDto.inspectionId).FirstOrDefault().roadDrainges.Add(roadDraingeDto);
                 }
                 else if (dto != null)
                 {
-                    dto.roadDrainge.Add(roadDraingeDto);
+                    dto.roadDrainges.Add(roadDraingeDto);
                 }
             }
             return null;
@@ -153,21 +171,27 @@ namespace Road.Inspection.Api.Repo
                 roadEdgeSideSlopeDto.latitude = string.Concat(reader["latitude"]);
             if (reader["code"] != DBNull.Value)
                 roadEdgeSideSlopeDto.code = string.Concat(reader["code"]);
+            if (reader["qty"] != DBNull.Value)
+                roadEdgeSideSlopeDto.qty = string.Concat(reader["qty"]);
             if (reader["measure"] != DBNull.Value)
                 roadEdgeSideSlopeDto.measure = string.Concat(reader["measure"]);
-            if (reader["image"] != DBNull.Value)
-                roadEdgeSideSlopeDto.image = string.Concat(reader["image"]);
+            if (reader["image1"] != DBNull.Value)
+                roadEdgeSideSlopeDto.image1 = string.Concat(reader["image1"]);
+            if (reader["image2"] != DBNull.Value)
+                roadEdgeSideSlopeDto.image2 = string.Concat(reader["image2"]);
+            if (reader["image3"] != DBNull.Value)
+                roadEdgeSideSlopeDto.image3 = string.Concat(reader["image3"]);
 
             if (roadEdgeSideSlopeDto.inspectionId != null)
             {
                 if (dtos != null)
                 {
                     if (dtos.Any(x => x.id == roadEdgeSideSlopeDto.inspectionId))
-                        dtos.Where(x => x.id == roadEdgeSideSlopeDto.inspectionId).FirstOrDefault().roadEdgeSideSlope.Add(roadEdgeSideSlopeDto);
+                        dtos.Where(x => x.id == roadEdgeSideSlopeDto.inspectionId).FirstOrDefault().roadEdgeSideSlopes.Add(roadEdgeSideSlopeDto);
                 }
                 else if (dto != null)
                 {
-                    dto.roadEdgeSideSlope.Add(roadEdgeSideSlopeDto);
+                    dto.roadEdgeSideSlopes.Add(roadEdgeSideSlopeDto);
                 }
             }
             return null;
@@ -185,21 +209,27 @@ namespace Road.Inspection.Api.Repo
                 roadLaneDto.latitude = string.Concat(reader["latitude"]);
             if (reader["code"] != DBNull.Value)
                 roadLaneDto.code = string.Concat(reader["code"]);
+            if (reader["qty"] != DBNull.Value)
+                roadLaneDto.qty = string.Concat(reader["qty"]);
             if (reader["measure"] != DBNull.Value)
                 roadLaneDto.measure = string.Concat(reader["measure"]);
-            if (reader["image"] != DBNull.Value)
-                roadLaneDto.image = string.Concat(reader["image"]);
+            if (reader["image1"] != DBNull.Value)
+                roadLaneDto.image1 = string.Concat(reader["image1"]);
+            if (reader["image2"] != DBNull.Value)
+                roadLaneDto.image2 = string.Concat(reader["image2"]);
+            if (reader["image3"] != DBNull.Value)
+                roadLaneDto.image3 = string.Concat(reader["image3"]);
 
             if (roadLaneDto.inspectionId != null)
             {
                 if (dtos != null)
                 {
                     if (dtos.Any(x => x.id == roadLaneDto.inspectionId))
-                        dtos.Where(x => x.id == roadLaneDto.inspectionId).FirstOrDefault().roadLane.Add(roadLaneDto);
+                        dtos.Where(x => x.id == roadLaneDto.inspectionId).FirstOrDefault().roadLanes.Add(roadLaneDto);
                 }
                 else if (dto != null)
                 {
-                    dto.roadLane.Add(roadLaneDto);
+                    dto.roadLanes.Add(roadLaneDto);
                 }
             }
             return null;
@@ -217,21 +247,27 @@ namespace Road.Inspection.Api.Repo
                 roadServiceFacilityDto.latitude = string.Concat(reader["latitude"]);
             if (reader["code"] != DBNull.Value)
                 roadServiceFacilityDto.code = string.Concat(reader["code"]);
+            if (reader["qty"] != DBNull.Value)
+                roadServiceFacilityDto.qty = string.Concat(reader["qty"]);
             if (reader["measure"] != DBNull.Value)
                 roadServiceFacilityDto.measure = string.Concat(reader["measure"]);
-            if (reader["image"] != DBNull.Value)
-                roadServiceFacilityDto.image = string.Concat(reader["image"]);
+            if (reader["image1"] != DBNull.Value)
+                roadServiceFacilityDto.image1 = string.Concat(reader["image1"]);
+            if (reader["image2"] != DBNull.Value)
+                roadServiceFacilityDto.image2 = string.Concat(reader["image2"]);
+            if (reader["image3"] != DBNull.Value)
+                roadServiceFacilityDto.image3 = string.Concat(reader["image3"]);
 
             if (roadServiceFacilityDto.inspectionId != null)
             {
                 if (dtos != null)
                 {
                     if (dtos.Any(x => x.id == roadServiceFacilityDto.inspectionId))
-                        dtos.Where(x => x.id == roadServiceFacilityDto.inspectionId).FirstOrDefault().roadServiceFacility.Add(roadServiceFacilityDto);
+                        dtos.Where(x => x.id == roadServiceFacilityDto.inspectionId).FirstOrDefault().roadServiceFacilities.Add(roadServiceFacilityDto);
                 }
                 else if (dto != null)
                 {
-                    dto.roadServiceFacility.Add(roadServiceFacilityDto);
+                    dto.roadServiceFacilities.Add(roadServiceFacilityDto);
                 }
             }
             return null;
@@ -249,21 +285,27 @@ namespace Road.Inspection.Api.Repo
                 smoothnessRoadwayDto.latitude = string.Concat(reader["latitude"]);
             if (reader["code"] != DBNull.Value)
                 smoothnessRoadwayDto.code = string.Concat(reader["code"]);
+            if (reader["qty"] != DBNull.Value)
+                smoothnessRoadwayDto.qty = string.Concat(reader["qty"]);
             if (reader["measure"] != DBNull.Value)
                 smoothnessRoadwayDto.measure = string.Concat(reader["measure"]);
-            if (reader["image"] != DBNull.Value)
-                smoothnessRoadwayDto.image = string.Concat(reader["image"]);
+            if (reader["image1"] != DBNull.Value)
+                smoothnessRoadwayDto.image1 = string.Concat(reader["image1"]);
+            if (reader["image2"] != DBNull.Value)
+                smoothnessRoadwayDto.image2 = string.Concat(reader["image2"]);
+            if (reader["image3"] != DBNull.Value)
+                smoothnessRoadwayDto.image3 = string.Concat(reader["image3"]);
 
             if (smoothnessRoadwayDto.inspectionId != null)
             {
                 if (dtos != null)
                 {
                     if (dtos.Any(x => x.id == smoothnessRoadwayDto.inspectionId))
-                        dtos.Where(x => x.id == smoothnessRoadwayDto.inspectionId).FirstOrDefault().smoothnessRoadway.Add(smoothnessRoadwayDto);
+                        dtos.Where(x => x.id == smoothnessRoadwayDto.inspectionId).FirstOrDefault().smoothnessRoadways.Add(smoothnessRoadwayDto);
                 }
                 else if (dto != null)
                 {
-                    dto.smoothnessRoadway.Add(smoothnessRoadwayDto);
+                    dto.smoothnessRoadways.Add(smoothnessRoadwayDto);
                 }
             }
             return null;
@@ -273,7 +315,7 @@ namespace Road.Inspection.Api.Repo
             try
             {
                 base.ExecuteNonQuery("dbo.sp_road_inspection_create", RoadDto.insertSqlParams(param), CommandType.StoredProcedure);
-                return ResultDto.success(true, "Амжилттай хадгалагдлаа");
+                return ResultDto.success(true, "Амжилттай хадгаллаа");
             }
             catch (Exception ex)
             {
@@ -283,7 +325,7 @@ namespace Road.Inspection.Api.Repo
         public ResultDto RoadItemCreate(RoadItemDto param, int type)
         {
             base.ExecuteNonQuery("dbo.sp_road_item_create", RoadItemDto.insertSqlParams(param, type), CommandType.StoredProcedure);
-            return ResultDto.success(true, "Амжилттай хадгалагдлаа");
+            return ResultDto.success(true, "Амжилттай хадгаллаа");
         }
         public List<RoadDto> GetRoads()
         {
