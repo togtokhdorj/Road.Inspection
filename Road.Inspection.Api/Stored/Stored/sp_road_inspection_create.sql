@@ -88,7 +88,7 @@ begin try
 	else
 	begin
 		insert into RoadInspection (Oid,teamLeader,inspectionEngineer,measuringInstrument,other,markType,plateNumber,roadNumber,roadDirection,category,startPointN,startPointE,endPointN,endPointE,kilometr,kilometrs,degrees,beforeLaneDate,beforeLeftLane,beforeRightLane,currentLeftLane,currentRightLane,specialNote,subscriberName,subscriberPositions,consultantName,consultantPositions,roadManager,roadPositions,weather,date,companyName)
-			select 	@id,@teamLeader,@inspectionEngineer,@measuringInstrument,@other,@markType,@plateNumber,@roadNumber,@roadDirection,@category,@startPointN,@endPointE,@startPointN,@endPointE,@kilometr,@kilometrs,@degrees,@beforeLaneDate,@beforeLeftLane,@beforeRightLane,@currentLeftLane,@currentRightLane,@specialNote,@subscriberName,@subscriberPositions,@consultantName,@consultantPositions,@roadManager,@roadPositions,@weather,@date,@companyName
+			select @id,@teamLeader,@inspectionEngineer,@measuringInstrument,@other,@markType,@plateNumber,@roadNumber,@roadDirection,@category,@startPointN,@endPointE,@startPointN,@endPointE,@kilometr,@kilometrs,@degrees,@beforeLaneDate,@beforeLeftLane,@beforeRightLane,@currentLeftLane,@currentRightLane,@specialNote,@subscriberName,@subscriberPositions,@consultantName,@consultantPositions,@roadManager,@roadPositions,@weather,@date,@companyName
 	end
 end try
 begin catch

@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>D:\projects\Road.Inspection\Road.Inspection.Web\bin\app.publish\</_PublishTargetUrl>
-    <History>True|2022-08-02T09:57:58.2425236Z;True|2022-08-01T12:58:45.7061289+08:00;True|2022-08-01T12:55:35.4138887+08:00;</History>
+    <History>True|2022-08-31T11:02:47.2852588Z;True|2022-08-31T18:33:25.2180385+08:00;True|2022-08-02T17:57:58.2425236+08:00;True|2022-08-01T12:58:45.7061289+08:00;True|2022-08-01T12:55:35.4138887+08:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/de/DevExpress.Data.v21.1.resources.dll">
@@ -555,28 +555,28 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>06/14/2022 00:07:09</publishTime>
     </File>
     <File Include="bin/mn/Road.Inspection.Module.resources.dll">
-      <publishTime>08/31/2022 08:28:46</publishTime>
+      <publishTime>08/31/2022 19:02:46</publishTime>
     </File>
     <File Include="bin/mn/Road.Inspection.Module.Web.resources.dll">
-      <publishTime>08/31/2022 08:28:46</publishTime>
+      <publishTime>08/31/2022 19:02:46</publishTime>
     </File>
     <File Include="bin/Road.Inspection.Module.dll">
-      <publishTime>08/31/2022 08:28:46</publishTime>
+      <publishTime>08/31/2022 19:02:46</publishTime>
     </File>
     <File Include="bin/Road.Inspection.Module.pdb">
-      <publishTime>08/31/2022 08:28:46</publishTime>
+      <publishTime>08/31/2022 19:02:46</publishTime>
     </File>
     <File Include="bin/Road.Inspection.Module.Web.dll">
-      <publishTime>08/31/2022 08:28:46</publishTime>
+      <publishTime>08/31/2022 19:02:46</publishTime>
     </File>
     <File Include="bin/Road.Inspection.Module.Web.pdb">
-      <publishTime>08/31/2022 08:28:46</publishTime>
+      <publishTime>08/31/2022 19:02:46</publishTime>
     </File>
     <File Include="bin/Road.Inspection.Web.dll">
-      <publishTime>08/31/2022 08:28:46</publishTime>
+      <publishTime>08/31/2022 19:02:46</publishTime>
     </File>
     <File Include="bin/Road.Inspection.Web.pdb">
-      <publishTime>08/31/2022 08:28:46</publishTime>
+      <publishTime>08/31/2022 19:02:46</publishTime>
     </File>
     <File Include="bin/ru/DevExpress.Data.v21.1.resources.dll">
       <publishTime>06/14/2022 00:06:53</publishTime>

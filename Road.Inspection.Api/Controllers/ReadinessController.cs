@@ -41,29 +41,6 @@ namespace Road.Inspection.Api.Controllers
                 return Request.CreateResponse(HttpStatusCode.OK, ResultDto.error(false, ex.Message));
             }
         }
-        [HttpPost]
-        [Route("level/readiness/update")]
-        [ResponseType(typeof(ResultDto))]
-        public HttpResponseMessage UpdateLevelReadiness(HttpRequestMessage data)
-        {
-            try
-            {
-                ResultDto resultDto = new ResultDto();
-                string json = data.Content.ReadAsStringAsync().Result;
-                LevelReadiness param = JsonConvert.DeserializeObject<LevelReadiness>(json);
-                if (param == null)
-                    return Request.CreateResponse(HttpStatusCode.NotFound, ResultDto.error(false, "Өгөгдөл хоосон илгээж байна."));
-                else
-                {
-                    resultDto = service.Update(param);
-                    return Request.CreateResponse(HttpStatusCode.OK, resultDto);
-                }
-            }
-            catch (Exception ex)
-            {
-                return Request.CreateResponse(HttpStatusCode.OK, ResultDto.error(false, ex.Message));
-            }
-        }
         [HttpGet]
         [Route("level/readiness")]
         [ResponseType(typeof(List<LevelReadiness>))]

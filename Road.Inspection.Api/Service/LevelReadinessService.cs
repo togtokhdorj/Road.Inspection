@@ -19,10 +19,6 @@ namespace Road.Inspection.Api.Service
         {
             return repo.Create(level);
         }
-        public ResultDto Update(LevelReadiness level)
-        {
-            return repo.Update(level);
-        }
         public ResultDto GetItems(string id)
         {
             return repo.GetItems(id);

@@ -15,28 +15,36 @@ namespace Road.Inspection.Api.Repo
         public override LevelReadiness PopulateRecord(IDataReader reader)
         {
             dto = new LevelReadiness();
-            if (reader["id"] != DBNull.Value)
-                dto.id = Guid.Parse(string.Concat(reader["id"]));
-            if (reader["totalKilometrs"] != DBNull.Value)
-                dto.totalKilometrs = int.Parse(string.Concat(reader["totalKilometrs"]));
-            if (reader["kilometr"] != DBNull.Value)
-                dto.kilometr = int.Parse(string.Concat(reader["kilometr"]));
-            if (reader["kilometrs"] != DBNull.Value)
-                dto.kilometrs = int.Parse(string.Concat(reader["kilometrs"]));
-            if (reader["startCoordinateLength"] != DBNull.Value)
-                dto.startCoordinateLength = string.Concat(reader["startCoordinateLength"]);
-            if (reader["startCoordinateLatitude"] != DBNull.Value)
-                dto.startCoordinateLatitude = string.Concat(reader["startCoordinateLatitude"]);
-            if (reader["endCoordinateLength"] != DBNull.Value)
-                dto.endCoordinateLength = string.Concat(reader["endCoordinateLength"]);
-            if (reader["endCoordinateLatitude"] != DBNull.Value)
-                dto.endCoordinateLatitude = string.Concat(reader["endCoordinateLatitude"]);
-            if (reader["workChairmanName"] != DBNull.Value)
-                dto.workChairmanName = string.Concat(reader["workChairmanName"]);
-            if (reader["position"] != DBNull.Value)
-                dto.position = string.Concat(reader["position"]);
-            if (reader["name"] != DBNull.Value)
-                dto.name = string.Concat(reader["name"]);
+            if (reader["Oid"] != DBNull.Value)
+                dto.id = Guid.Parse(string.Concat(reader["Oid"]));
+            if (reader["kmFrom"] != DBNull.Value)
+                dto.kmFrom = double.Parse(string.Concat(reader["kmFrom"]));
+            if (reader["kmTo"] != DBNull.Value)
+                dto.kmTo = double.Parse(string.Concat(reader["kmTo"]));
+            if (reader["kmTotal"] != DBNull.Value)
+                dto.kmTotal = double.Parse(string.Concat(reader["kmTotal"]));
+            if (reader["startPointE"] != DBNull.Value)
+                dto.startPointE = string.Concat(reader["startPointE"]);
+            if (reader["startPointN"] != DBNull.Value)
+                dto.startPointN = string.Concat(reader["startPointN"]);
+            if (reader["endPointE"] != DBNull.Value)
+                dto.endPointE = string.Concat(reader["endPointE"]);
+            if (reader["endPointN"] != DBNull.Value)
+                dto.endPointN = string.Concat(reader["endPointN"]);
+            if (reader["subscriberName"] != DBNull.Value)
+                dto.subscriberName = string.Concat(reader["subscriberName"]);
+            if (reader["subscriberPositions"] != DBNull.Value)
+                dto.subscriberPositions = string.Concat(reader["subscriberPositions"]);
+            if (reader["consultantName"] != DBNull.Value)
+                dto.consultantName = string.Concat(reader["consultantName"]);
+            if (reader["consultantPositions"] != DBNull.Value)
+                dto.consultantPositions = string.Concat(reader["consultantPositions"]);
+            if (reader["roadManager"] != DBNull.Value)
+                dto.roadManager = string.Concat(reader["roadManager"]);
+            if (reader["roadPositions"] != DBNull.Value)
+                dto.other = string.Concat(reader["other"]);
+            if (reader["other"] != DBNull.Value)
+                dto.roadPositions = string.Concat(reader["roadPositions"]);
             if (reader["pavementEdgeEvaluation"] != DBNull.Value)
                 dto.pavementEdgeEvaluation = int.Parse(string.Concat(reader["pavementEdgeEvaluation"]));
             if (reader["dartDam"] != DBNull.Value)
@@ -78,13 +86,15 @@ namespace Road.Inspection.Api.Repo
         }
         public ResultDto Create(LevelReadiness param)
         {
-            base.ExecuteNonQuery("dbo.sp_level_readiness_create", LevelReadiness.insertSqlParams(param), CommandType.StoredProcedure);
-            return ResultDto.success(true, "Амжилттай хадгалагдлаа");
-        }
-        public ResultDto Update(LevelReadiness param)
-        {
-            base.ExecuteNonQuery("dbo.sp_level_readiness_update", LevelReadiness.updateSqlParams(param), CommandType.StoredProcedure);
-            return ResultDto.success(true, "Амжилттай хадгалагдлаа");
+            try
+            {
+                base.ExecuteNonQuery("dbo.sp_level_readiness_create", LevelReadiness.insertSqlParams(param), CommandType.StoredProcedure);
+                return ResultDto.success(true, "Амжилттай хадгалагдлаа");
+            }
+            catch (Exception ex)
+            {
+                return ResultDto.error(msg: ex.Message);
+            }
         }
         public ResultDto GetItems(string id)
         {
