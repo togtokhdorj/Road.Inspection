@@ -3,14 +3,14 @@
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
       <Items>
-        <ConnectionNode Name="103.48.116.72,1456:sa">
-          <Created>2022-07-18T10:56:57.4381328+08:00</Created>
+        <ConnectionNode Name="103.48.116.72,1484:sa">
+          <Created>2024-04-25T11:15:37.0106845+08:00</Created>
           <Type>SQL</Type>
-          <Server>103.48.116.72,1456</Server>
+          <Server>103.48.116.72,1484</Server>
           <UserName>sa</UserName>
           <Authentication>SQL</Authentication>
-          <InitialDB>Road.Inspection</InitialDB>
-          <LoginTimeout>15</LoginTimeout>
+          <InitialDB />
+          <LoginTimeout>30</LoginTimeout>
           <ExecutionTimeout>0</ExecutionTimeout>
           <ConnectionProtocol>NotSpecified</ConnectionProtocol>
           <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
@@ -20,46 +20,52 @@
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
         <FileNode Name="sp_level_readiness_create.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:103.48.116.72,1456:False:sa</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>103.48.116.72,1456</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:103.48.116.72,1484:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>103.48.116.72,1484</AssociatedConnSrvName>
           <AssociatedConnUserName>sa</AssociatedConnUserName>
           <FullPath>sp_level_readiness_create.sql</FullPath>
         </FileNode>
         <FileNode Name="sp_level_readiness_get.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:103.48.116.72,1456:False:sa</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>103.48.116.72,1456</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:103.48.116.72,1484:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>103.48.116.72,1484</AssociatedConnSrvName>
           <AssociatedConnUserName>sa</AssociatedConnUserName>
           <FullPath>sp_level_readiness_get.sql</FullPath>
         </FileNode>
         <FileNode Name="sp_road_crashes.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:103.48.116.72,1456:False:sa</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>103.48.116.72,1456</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:103.48.116.72,1484:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>103.48.116.72,1484</AssociatedConnSrvName>
           <AssociatedConnUserName>sa</AssociatedConnUserName>
           <FullPath>sp_road_crashes.sql</FullPath>
         </FileNode>
         <FileNode Name="sp_road_evaluations.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:103.48.116.72,1456:False:sa</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>103.48.116.72,1456</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:103.48.116.72,1484:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>103.48.116.72,1484</AssociatedConnSrvName>
           <AssociatedConnUserName>sa</AssociatedConnUserName>
           <FullPath>sp_road_evaluations.sql</FullPath>
         </FileNode>
         <FileNode Name="sp_road_inspection_create.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:103.48.116.72,1456:False:sa</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>103.48.116.72,1456</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:103.48.116.72,1484:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>103.48.116.72,1484</AssociatedConnSrvName>
           <AssociatedConnUserName>sa</AssociatedConnUserName>
           <FullPath>sp_road_inspection_create.sql</FullPath>
         </FileNode>
         <FileNode Name="sp_road_inspection_get.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:103.48.116.72,1456:False:sa</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>103.48.116.72,1456</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:103.48.116.72,1484:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>103.48.116.72,1484</AssociatedConnSrvName>
           <AssociatedConnUserName>sa</AssociatedConnUserName>
           <FullPath>sp_road_inspection_get.sql</FullPath>
         </FileNode>
         <FileNode Name="sp_road_item_create.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:103.48.116.72,1456:False:sa</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>103.48.116.72,1456</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:103.48.116.72,1484:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>103.48.116.72,1484</AssociatedConnSrvName>
           <AssociatedConnUserName>sa</AssociatedConnUserName>
           <FullPath>sp_road_item_create.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery1.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery1.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
